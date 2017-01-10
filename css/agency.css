@@ -190,7 +190,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: #333;
+  background-color: #000;
 }
 
 .navbar-custom .nav li a {
@@ -242,7 +242,7 @@ fieldset[disabled] .btn-xl.active {
 
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #333;
+    background-color: #000;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -294,7 +294,7 @@ header .intro-text {
 @media (min-width: 992px) {
   header .intro-text {
     padding-top: 75px;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
   }
 
 }
@@ -381,6 +381,39 @@ section h3.section-subheading {
   margin: 15px 0;
   text-transform: none;
 }
+
+.player {
+  text-align:center;
+}
+.player > div.audio-wrapper,
+.player > div.audio-list-wrapper,
+#playlist > ul > li > a {
+  padding: 0 20px;
+  margin: 0 auto;
+  min-width: 250px;
+  max-width: 996px;
+}
+
+.player audio  {
+  width: 90%
+}
+
+#playlist {
+  list-style-type: none;
+}
+
+#playlist > ul > li > a {
+  display: inline-block;
+  line-height: 25px; 
+}
+#playlist > ul > li > a > span.fa{
+  color: #282828;
+  font-family: inherit;
+}
+span.fa {
+  margin-right: 10px;
+}
+
 #gallery .gallery-item {
   margin: 0 0 15px;
   right: 0;
