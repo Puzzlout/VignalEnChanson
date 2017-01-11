@@ -30,4 +30,10 @@
         }
     })
 
+    if(window.location.href.indexOf("wr") > -1) {
+        $("#viewport-spy").show();
+        $("#viewport-spy").html(window.innerWidth + "x" + window.innerHeight);
+    }
+
+
 })(jQuery); // End of use strict

@@ -68,7 +68,7 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: white;
+  color: #333;
   background-color: #fdfdfd;
   border-color: #f6bf01;
 }
@@ -96,11 +96,11 @@ fieldset[disabled] .btn-primary.active {
   border-color: #fdfdfd;
 }
 .btn-primary .badge {
-  color: #fdfdfd;
+  color: #333;
   background-color: inherit;
 }
 .btn-xl {
-  color: white;
+  color: #333;
   background-color: #fdfdfd;
   border-color: #fdfdfd;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -115,7 +115,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-  color: white;
+  color: #333;
   background-color: #fdfdfd;
   border-color: #f6bf01;
 }
@@ -143,7 +143,7 @@ fieldset[disabled] .btn-xl.active {
   border-color: #fdfdfd;
 }
 .btn-xl .badge {
-  color: #fdfdfd;
+  color: #666;
   background-color: white;
 }
 
@@ -160,7 +160,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-custom {
-  background-color: #222222;
+  background: rgba(0,0,0,0.8);
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
@@ -181,16 +181,16 @@ fieldset[disabled] .btn-xl.active {
   border-color: #fdfdfd;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  color: white;
+  color: #333;
   font-size: 12px;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #000;
+  background: rgba(253, 253, 253, 0.9);
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: #000;
+  background: rgba(12, 12, 12, 0.0);
 }
 
 .navbar-custom .nav li a {
@@ -242,7 +242,8 @@ fieldset[disabled] .btn-xl.active {
 
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #000;
+    background: rgba(12, 12, 12, 0.9);
+  ;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -316,9 +317,13 @@ header .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 100px;
 }
+header .intro-next {
+  position: absolute;
+  bottom: 10vh;
+}
 header .intro-next .intro-song p {
   font-size: 18px;
-  width: 60%;
+  width: 50%;
 }
 .intro-next {
   color: #FFF;
@@ -351,8 +356,11 @@ header .intro-next .intro-song p {
 }
 
 @media (min-width: 1200px) {
+  header .intro-next {
+    bottom: 6vh;
+  }
   header .intro-next .intro-song p {
-    width: 50%;
+    width: 60%;
   }
 
 }
@@ -472,6 +480,9 @@ span.fa {
   font-size: 16px;
   margin: 0;
 }
+#gallery img {
+  width: 100%;
+}
 #gallery * {
   z-index: 2;
 }
@@ -502,9 +513,15 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  background-image: url('../img/map-image.png');
-  background-position: center;
+  background-image: url('../img/contact-bg.jpg');
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
+  padding:0;
+}
+section#contact > .overlay {
+  background: rgba(12,12,12,0.5);
+  padding: 100px 0;
 }
 section#contact .section-heading {
   color: white;
@@ -515,6 +532,7 @@ section#contact .form-group {
 section#contact .form-group input,
 section#contact .form-group textarea {
   padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
 }
 section#contact .form-group input.form-control {
   height: auto;
@@ -530,27 +548,27 @@ section#contact ::-webkit-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #666;
 }
 section#contact :-moz-placeholder {
   /* Firefox 18- */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #666;
 }
 section#contact ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #666;
 }
 section#contact :-ms-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #666;
 }
 section#contact .text-danger {
   color: #e74c3c;
@@ -699,4 +717,14 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #fdfdfd;
+}
+#viewport-spy {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ac2925;
+  color: #fff;
+  padding: 10px;
 }
