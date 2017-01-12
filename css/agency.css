@@ -419,6 +419,22 @@ section h3.section-subheading {
   color: #282828;
   font-family: inherit;
 }
+#playlist .audio-track {
+  padding: 20px 0;
+  font-size: 2em;
+}
+@media (max-width: 768px) {
+  #playlist .audio-track {
+    padding: 10px 0;
+    font-size: 1.5em;
+  }
+}
+#playlist .audio-track-even {
+  background-color: #f2f2f2;
+}
+#playlist .audio-track-odd {
+  background-color: #fdfdfd;
+}
 span.fa {
   margin-right: 10px;
 }
