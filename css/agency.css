@@ -412,20 +412,24 @@ section h3.section-subheading {
 
 #playlist li a {
   display: inline-block;
-  line-height: 25px;
+  line-height: 60px;
   color: #666;
 }
 #playlist li a > span.fa{
   color: #282828;
   font-family: inherit;
 }
+#playlist .audio-track a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
 #playlist .audio-track {
-  padding: 20px 0;
   font-size: 2em;
 }
+
 @media (max-width: 768px) {
   #playlist .audio-track {
-    padding: 10px 0;
     font-size: 1.5em;
   }
 }
