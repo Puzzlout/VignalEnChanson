@@ -147,6 +147,11 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 
+.col-no-pd, .row-no-pd, .modal-body-no-pd {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @media (max-width: 768px) {
   .fa-stack {
     font-size: 2.5em;
@@ -370,7 +375,7 @@ header .intro-next .intro-song p {
 
 }
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 section h2.section-heading {
   font-size: 40px;
@@ -387,7 +392,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 75px 0;
   }
 }
 .service-heading {
@@ -395,6 +400,27 @@ section h3.section-subheading {
   text-transform: none;
 }
 
+#music .container {
+  padding: 50px 10px;
+}
+#music .row {
+  background: rgba(12,12,12,0.9);
+}
+#music .music-header {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding-top: 50px;
+}
+#music .music-content {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding-bottom: 50px;
+
+}
+
+#music h2, #music h3{
+  color: #fff;
+}
 .player .audio-wrapper {
   text-align:center;
 }
@@ -409,11 +435,6 @@ section h3.section-subheading {
 
 .player audio  {
   width: 100%;
-}
-.player {
-  background: rgba(12,12,12,0.9);
-  padding: 50px 10px;
-  border-radius: 4px;
 }
 
 #playlist {
@@ -528,13 +549,20 @@ span.fa {
   }
 }
 
-.curtain-slice {
+.curtain-slice- {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#880000+0,f00000+25,e00000+30,c00000+40,800000+45,800000+45,aa0000+60,f00000+80,d00000+86,880000+100 */
-  background: #880000; /* Old browsers */
-  background: -moz-linear-gradient(left,  #880000 0%, #f00000 25%, #e00000 30%, #c00000 40%, #800000 45%, #800000 45%, #aa0000 60%, #f00000 80%, #d00000 86%, #880000 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left,  #880000 0%,#f00000 25%,#e00000 30%,#c00000 40%,#800000 45%,#800000 45%,#aa0000 60%,#f00000 80%,#d00000 86%,#880000 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right,  #880000 0%,#f00000 25%,#e00000 30%,#c00000 40%,#800000 45%,#800000 45%,#aa0000 60%,#f00000 80%,#d00000 86%,#880000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#880000', endColorstr='#880000',GradientType=1 ); /* IE6-9 */
+  /*background: #880000;
+  background: -moz-repeating-linear-gradient(90deg,  #880000 0%, #f00000 25%, #e00000 30%, #c00000 40%, #800000 45%, #800000 45%, #aa0000 60%, #f00000 80%, #d00000 86%, #880000 100%);
+  background: -webkit-repeating-linear-gradient(90deg,  #880000 0%,#f00000 25%,#e00000 30%,#c00000 40%,#800000 45%,#800000 45%,#aa0000 60%,#f00000 80%,#d00000 86%,#880000 100%);
+  background: repeating-linear-gradient(90deg,  #880000 0%,#f00000 25%,#e00000 30%,#c00000 40%,#800000 45%,#800000 45%,#aa0000 60%,#f00000 80%,#d00000 86%,#880000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#880000', endColorstr='#880000',GradientType=1 );
+  background-repeat: repeat-x;*/
+
+  background: -webkit-repeating-linear-gradient(90deg,#550000,#d00000 50px,#a00000 75px); /* For Safari 5.1 to 6.0 */
+  background: -o-repeating-linear-gradient(90deg,#550000,#d00000 50px,#a00000 75px); /* For Opera 11.1 to 12.0 */
+  background: -moz-repeating-linear-gradient(90deg,#550000,#d00000 50px,#a00000 75px); /* For Firefox 3.6 to 15 */
+  background: repeating-linear-gradient(90deg,#550000,#d00000 50px,#a00000 75px); /* Standard syntax (must be last) */
+
 }
 
 .team-member {
@@ -675,7 +703,6 @@ ul.social-buttons li a:active {
   box-shadow: none;
   border: none;
   min-height: 100%;
-  padding: 100px 0;
   text-align: center;
 }
 .gallery-modal .modal-content h2 {
