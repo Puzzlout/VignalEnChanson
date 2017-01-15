@@ -262,7 +262,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  top: 10vh;
+  top: 5vh;
   height: 90%;
 }
 @media (min-width: 992px) {
@@ -280,6 +280,11 @@ header {
     background-image: url("../img/header-bg-768w.jpg");
   }
 }
+/*@media (max-width: 480px) {
+  .hero {
+    background-image: url("../img/header-bg-480w.jpg");
+  }
+}*/
 
 
 header .intro-text {
@@ -313,13 +318,13 @@ header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 30px;
-  line-height: 50px;
+  font-size: 28px;
+  width: 50%;
   margin-bottom: 100px;
 }
 header .intro-next {
   position: absolute;
-  bottom: 10vh;
+  bottom: 2vh;
 }
 header .intro-next .intro-song p {
   font-size: 18px;

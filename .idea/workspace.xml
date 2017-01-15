@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cf8cd10-aa27-4548-b0c7-b5302c3ae053" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/header-bg-768w.jpg" afterPath="$PROJECT_DIR$/img/header-bg-768w.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/agency.css" afterPath="$PROJECT_DIR$/css/agency.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +37,8 @@
       <file leaf-file-name="agency.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/agency.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="531" column="130" lean-forward="false" selection-start-line="531" selection-start-column="130" selection-end-line="531" selection-end-column="130" />
+            <state relative-caret-position="508">
+              <caret line="326" column="11" lean-forward="false" selection-start-line="326" selection-start-column="11" selection-end-line="326" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -84,6 +85,7 @@
       <find>Roboto</find>
       <find>Droid</find>
       <find>v3</find>
+      <find>tea</find>
     </findStrings>
     <replaceStrings>
       <replace>gallery</replace>
@@ -271,12 +273,12 @@
       <updated>1483809319072</updated>
       <workItem from="1483809320978" duration="15063000" />
       <workItem from="1484027748604" duration="6025000" />
-      <workItem from="1484198344751" duration="2423000" />
+      <workItem from="1484198344751" duration="3000000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23511000" />
+    <option name="totallyTimeSpent" value="24088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="976" extended-state="6" />
@@ -403,14 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/agency.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -422,10 +416,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/agency.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/agency.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="531" column="130" lean-forward="false" selection-start-line="531" selection-start-column="130" selection-end-line="531" selection-end-column="130" />
+        <state relative-caret-position="508">
+          <caret line="326" column="11" lean-forward="false" selection-start-line="326" selection-start-column="11" selection-end-line="326" selection-end-column="11" />
           <folding />
         </state>
       </provider>
