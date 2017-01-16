@@ -325,51 +325,53 @@
 <!-- Contact Section -->
 <section id="contact">
     <div class="overlay">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Contactez-nous</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contactez-nous</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Votre nom *" id="name" required
-                                       data-validation-required-message="Veuillez saisir votre nom.">
-                                <p class="help-block text-danger"></p>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Votre nom *" id="name" required
+                                           data-validation-required-message="Veuillez saisir votre nom.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Votre adresse e-mail *"
+                                           id="email" required
+                                           data-validation-required-message="Veuillez saisir votre adresse e-mail.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Votre numéro de téléphone *"
+                                           id="phone" required
+                                           data-validation-required-message="Veuillez saisir votre numéro de téléphone.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Votre adresse e-mail *" id="email" required
-                                       data-validation-required-message="Veuillez saisir votre adresse e-mail.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control" placeholder="Votre numéro de téléphone *" id="phone" required
-                                       data-validation-required-message="Veuillez saisir votre numéro de téléphone.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
+                            <div class="col-md-6">
+                                <div class="form-group">
                                 <textarea class="form-control" placeholder="Votre message *" id="message" required
                                           data-validation-required-message="Veuillez saisir votre message."></textarea>
-                                <p class="help-block text-danger"></p>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Envoyer</button>
                             </div>
                         </div>
-                        <div class="clearfix"></div>
-                        <div class="col-lg-12 text-center">
-                            <div id="success"></div>
-                            <button type="submit" class="btn btn-xl">Envoyer</button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </section>
 
@@ -405,7 +407,7 @@
 <!-- Use the modals below to showcase the image of the gallery in fullscreen -->
 
 <!-- Portfolio Modal 1 -->
-<div class="gallery-modal modal fade" id="galleryModal1" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="carousel-item gallery-modal modal fade" id="galleryModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -435,7 +437,7 @@
 </div>
 
 <!-- Portfolio Modal 2 -->
-<div class="gallery-modal modal fade" id="galleryModal2" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="carousel-item gallery-modal modal fade" id="galleryModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -464,7 +466,7 @@
 </div>
 
 <!-- Portfolio Modal 3 -->
-<div class="gallery-modal modal fade" id="galleryModal3" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="carousel-item gallery-modal modal fade" id="galleryModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -494,7 +496,7 @@
 </div>
 
 <!-- Portfolio Modal 4 -->
-<div class="gallery-modal modal fade" id="galleryModal4" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="carousel-item gallery-modal modal fade" id="galleryModal4" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -524,7 +526,7 @@
 </div>
 
 <!-- Portfolio Modal 5 -->
-<div class="gallery-modal modal fade" id="galleryModal5" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="carousel-item gallery-modal modal fade" id="galleryModal5" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -553,6 +555,62 @@
     </div>
 </div>
 
+<!--<div class="carousel-item gallery-modal modal fade" id="galleryModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="container-fluid">
+                    <div class="row row-no-pd">
+                        <div class="col-lg-12 col-no-pd">
+                            <div class="modal-body modal-body-no-pd">
+                                <h2>img1</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/gallery/5.jpg" alt="">
+                                <button type="button" class="btn btn-primary btn-close-modal" data-dismiss="modal">
+                                    <i class="fa fa-times"></i>
+                                    Fermer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container-fluid">
+                    <div class="row row-no-pd">
+                        <div class="col-lg-12 col-no-pd">
+                            <div class="modal-body modal-body-no-pd">
+                                <h2>img2</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/gallery/5.jpg" alt="">
+                                <button type="button" class="btn btn-primary btn-close-modal" data-dismiss="modal">
+                                    <i class="fa fa-times"></i>
+                                    Fermer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            ...
+        </div>
+
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>-->
 
 <div id="viewport-spy"></div>
 <!-- jQuery -->

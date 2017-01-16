@@ -734,6 +734,7 @@ ul.social-buttons li a:active {
   top: 25px;
   right: 25px;
   cursor: pointer;
+  z-index: 2000;
 }
 .gallery-modal .close-modal:hover {
   opacity: 0.3;
@@ -799,4 +800,10 @@ body {
   background-color: #ac2925;
   color: #fff;
   padding: 10px;
+}
+
+#carousel-wrapper .carousel-control {
+  z-index: 1500;
+  background-color: transparent;
+  background-image: none;
 }
