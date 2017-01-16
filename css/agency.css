@@ -147,9 +147,12 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 
-.col-no-pd, .row-no-pd, .modal-body-no-pd {
+.col-no-pd, .row-no-pd {
   padding-left: 0;
   padding-right: 0;
+}
+.modal-body-no-pd {
+  padding: 0;
 }
 
 @media (max-width: 768px) {
@@ -727,12 +730,7 @@ ul.social-buttons li a:active {
 }
 .gallery-modal .close-modal {
   color: #000;
-  position: absolute;
-  width: 75px;
-  height: 75px;
   background-color: transparent;
-  top: 25px;
-  right: 25px;
   cursor: pointer;
   z-index: 2000;
 }
@@ -740,10 +738,9 @@ ul.social-buttons li a:active {
   opacity: 0.3;
 }
 .gallery-modal .close-modal .lr {
-  height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #222222;
+  background-color: #fff;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -752,15 +749,40 @@ ul.social-buttons li a:active {
   z-index: 1051;
 }
 .gallery-modal .close-modal .lr .rl {
-  height: 75px;
   width: 1px;
-  background-color: #222222;
+  background-color: #fff;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
   -webkit-transform: rotate(90deg);
   /* Safari and Chrome */
   z-index: 1052;
+}
+
+.gallery-modal .close-modal {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 30px;
+}
+.gallery-modal .close-modal .lr,
+.gallery-modal .close-modal .lr .rl {
+  height: 40px;
+}
+
+@media (min-width: 992px) {
+  .gallery-modal .close-modal {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 25px;
+    right: 25px;
+  }
+  .gallery-modal .close-modal .lr,
+  .gallery-modal .close-modal .lr .rl {
+    height: 75px;
+  }
 }
 .gallery-modal .modal-backdrop {
   opacity: 0;
@@ -802,8 +824,16 @@ body {
   padding: 10px;
 }
 
-#carousel-wrapper .carousel-control {
-  z-index: 1500;
-  background-color: transparent;
-  background-image: none;
+.slide-control {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  z-index: 2000;
+}
+.prev-slide {
+  left: 0;
+
+}
+.next-slide {
+  right: 0;
 }
