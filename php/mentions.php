@@ -1,0 +1,1 @@
+http://www.droit.co/mod%C3%A8les-de-mentions-pour-les-cookies.html
