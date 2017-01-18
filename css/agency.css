@@ -401,6 +401,86 @@ section h3.section-subheading {
   text-transform: none;
 }
 
+#team {
+  padding:0;
+  height:100vh;
+}
+#team .hero {
+  background-image: url("../img/team-bg.jpg");
+  top: 0;
+}
+@media (min-width: 992px) {
+  #team .hero {
+    background-image: url("../img/team-bg.jpg");
+  }
+}
+@media (max-width: 992px) {
+  #team .hero {
+    background-image: url("../img/team-bg-992w.jpg");
+  }
+}
+@media (max-width: 768px) {
+  #team .hero {
+    background-image: url("../img/team-bg-768w.jpg");
+  }
+}
+
+#team .team-catchphrase {
+  position: absolute;
+  bottom: 100px;
+  bottom: 10vh;
+}
+#team .team-catchphrase h2 {
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#team .overlay-white {
+  background: rgba(255,255,255,0.5);
+  font-size: 50px;
+}
+.team-member-bubble {
+
+}
+.team-member-bubble .fa {
+  color: #fff;
+  font-size: 4em;
+}
+.team-member-outerLeft {
+  position: absolute;
+}
+.team-member-innerLeft {
+  position: absolute;
+}
+.team-member-innerRight {
+  position: absolute;
+}
+.team-member-outerRight {
+  position: absolute;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid white;
+}
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+.team-member p {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+
+  .team-member {
+    display: none;
+  }
+}
+
 #music .container {
   padding: 50px 10px;
 }
@@ -550,22 +630,6 @@ span.fa {
   }
 }
 
-.team-member {
-  text-align: center;
-  margin-bottom: 50px;
-}
-.team-member img {
-  margin: 0 auto;
-  border: 7px solid white;
-}
-.team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none;
-}
-.team-member p {
-  margin-top: 0;
-}
 aside.clients img {
   margin: 50px auto;
 }

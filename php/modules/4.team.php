@@ -1,5 +1,6 @@
 <!-- Team Section -->
 <section id="team" class="bg-light-gray">
+    <div class="hero">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -49,5 +50,6 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </section>
