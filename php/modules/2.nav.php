@@ -7,7 +7,7 @@
                     data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Vignal en chanson</a>
+            <!--<a class="navbar-brand page-scroll" href="#page-top">Vignal en chanson</a>-->
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -20,16 +20,16 @@
                     <a class="page-scroll" href="#header">Accueil</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#team">A propos</a>
+                    <a class="page-scroll" href="#team">Scène</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#music">Musique</a>
+                    <a class="page-scroll" href="#music">Extraits</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#gallery">Photos</a>
+                    <a class="page-scroll" href="#gallery">Scolaire</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="#contact">Contacts</a>
                 </li>
             </ul>
         </div>
