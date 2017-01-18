@@ -552,22 +552,6 @@ span.fa {
   }
 }
 
-.curtain-slice- {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#880000+0,f00000+25,e00000+30,c00000+40,800000+45,800000+45,aa0000+60,f00000+80,d00000+86,880000+100 */
-  /*background: #880000;
-  background: -moz-repeating-linear-gradient(90deg,  #880000 0%, #f00000 25%, #e00000 30%, #c00000 40%, #800000 45%, #800000 45%, #aa0000 60%, #f00000 80%, #d00000 86%, #880000 100%);
-  background: -webkit-repeating-linear-gradient(90deg,  #880000 0%,#f00000 25%,#e00000 30%,#c00000 40%,#800000 45%,#800000 45%,#aa0000 60%,#f00000 80%,#d00000 86%,#880000 100%);
-  background: repeating-linear-gradient(90deg,  #880000 0%,#f00000 25%,#e00000 30%,#c00000 40%,#800000 45%,#800000 45%,#aa0000 60%,#f00000 80%,#d00000 86%,#880000 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#880000', endColorstr='#880000',GradientType=1 );
-  background-repeat: repeat-x;*/
-
-  background: -webkit-repeating-linear-gradient(90deg,#550000,#d00000 50px,#a00000 75px); /* For Safari 5.1 to 6.0 */
-  background: -o-repeating-linear-gradient(90deg,#550000,#d00000 50px,#a00000 75px); /* For Opera 11.1 to 12.0 */
-  background: -moz-repeating-linear-gradient(90deg,#550000,#d00000 50px,#a00000 75px); /* For Firefox 3.6 to 15 */
-  background: repeating-linear-gradient(90deg,#550000,#d00000 50px,#a00000 75px); /* Standard syntax (must be last) */
-
-}
-
 .team-member {
   text-align: center;
   margin-bottom: 50px;

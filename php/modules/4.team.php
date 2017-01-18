@@ -1,5 +1,5 @@
 <!-- Team Section -->
-<section id="team" class="bg-light-gray curtain-slice">
+<section id="team" class="bg-light-gray">
     <div class="curtain">
         <span class="curtain-slice"></span>
         <span class="curtain-slice"></span>
