@@ -4,15 +4,26 @@
             <div class="row">
                 <div class="col-sm-8">
                     <div class="intro-text">
-                        <div class="intro-lead-in">Bienvenue sur</div>
-                        <div class="intro-heading">Vignal en chanson</div>
+                        <div class="intro-lead-in">Bernard Vignal</div>
+                        <!--<div class="intro-heading">Vignal en chanson</div>-->
                     </div>
                 </div>
                 <div class="col-sm-4"></div>
             </div>
+            <!--            <div class="row">-->
+            <!--                <div class="col-sm-12">-->
             <div class="intro-next">
                 <div class="intro-song">
-                    <p>Il fallait bien qu’un jour je me décide à les vivre en scène...</p>
+                    <p>
+                        <span class="fa fa-quote-left"></span>
+                        Approche, approche écoute bien
+                    </p>
+                    <p>C'est la musique qui vient de loin</p>
+                    <p>Elle plane, elle flotte, elle nous traverse</p>
+                    <p>
+                        Elle vit, elle plisse elle nous caresse
+                        <span class="fa fa-quote-right"></span>
+                    </p>
                 </div>
                 <a href="#team" class="page-scroll">
                         <span class="fa-stack">
@@ -21,6 +32,8 @@
                     </span>
                 </a>
             </div>
+            <!--                </div>-->
+            <!--            </div>-->
         </div>
     </div>
 </header>

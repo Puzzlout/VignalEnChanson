@@ -167,6 +167,14 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 5vh;
+  height: 90%;
+
+}
 .navbar-custom {
   background: rgba(0,0,0,0.8);
   border-color: transparent;
@@ -265,35 +273,24 @@ header {
   background-color: #000;
   height: 100vh;
 }
-.hero {
+header .hero {
   background-image: url("../img/header-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  top: 5vh;
-  height: 90%;
 }
 @media (min-width: 992px) {
-  .hero {
+  header .hero {
     background-image: url("../img/header-bg.jpg");
   }
 }
 @media (max-width: 992px) {
-  .hero {
+  header .hero {
     background-image: url("../img/header-bg-992w.jpg");
   }
 }
 @media (max-width: 768px) {
-  .hero {
+  header .hero {
     background-image: url("../img/header-bg-768w.jpg");
   }
 }
-/*@media (max-width: 480px) {
-  .hero {
-    background-image: url("../img/header-bg-480w.jpg");
-  }
-}*/
-
 
 header .intro-text {
   padding-top: 125px;
@@ -332,15 +329,26 @@ header .intro-text .intro-heading {
 }
 header .intro-next {
   position: absolute;
-  bottom: 2vh;
+  left: 0;
+  bottom: -44px;
 }
-header .intro-next .intro-song p {
+header .intro-next .intro-song p,
+header .intro-next .intro-song .fa
+{
   font-size: 18px;
-  width: 50%;
+  color: #333;
+}
+header .intro-next .intro-song .fa-quote-left {
+  vertical-align: top;
+}
+header .intro-next .intro-song .fa-quote-right {
+  vertical-align: top;
 }
 .intro-next {
   color: #FFF;
-  text-align: left;
+  text-align: center;
+  width: 100%;
+  background: rgba(255,255,255,0.75);
 }
 
 @media (min-width: 768px) {
@@ -355,27 +363,17 @@ header .intro-next .intro-song p {
 }
 @media (min-width: 992px) {
   header .intro-text .intro-lead-in {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 40px;
     margin-bottom: 25px;
   }
   header .intro-text .intro-heading {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 75px;
   }
   header .intro-next .intro-song p {
     font-size: 36px;
   }
-}
-
-@media (min-width: 1200px) {
-  header .intro-next {
-    bottom: 6vh;
-  }
-  header .intro-next .intro-song p {
-    width: 60%;
-  }
-
 }
 section {
   padding: 50px 0;

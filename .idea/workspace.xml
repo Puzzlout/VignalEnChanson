@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cf8cd10-aa27-4548-b0c7-b5302c3ae053" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/header-bg-768w-2.jpg" afterPath="$PROJECT_DIR$/img/header-bg-768w-2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/agency.css" afterPath="$PROJECT_DIR$/css/agency.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/modules/2.nav.php" afterPath="$PROJECT_DIR$/php/modules/2.nav.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/modules/3.header.php" afterPath="$PROJECT_DIR$/php/modules/3.header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/modules/4.team.php" afterPath="$PROJECT_DIR$/php/modules/4.team.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/modules/5.music.php" afterPath="$PROJECT_DIR$/php/modules/5.music.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,8 +41,18 @@
       <file leaf-file-name="4.team.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/modules/4.team.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+            <state relative-caret-position="15">
+              <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3.header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/modules/3.header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,8 +61,8 @@
       <file leaf-file-name="agency.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/agency.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8280">
-              <caret line="552" column="1" lean-forward="false" selection-start-line="552" selection-start-column="1" selection-end-line="552" selection-end-column="1" />
+            <state relative-caret-position="574">
+              <caret line="365" column="17" lean-forward="false" selection-start-line="365" selection-start-column="17" selection-end-line="365" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -95,6 +101,8 @@
       <find>90deg,#880000,#f00000 20px,#c00000 30px</find>
       <find>v3</find>
       <find>team</find>
+      <find>.intro-ne</find>
+      <find>hero</find>
     </findStrings>
     <replaceStrings>
       <replace>gallery</replace>
@@ -115,10 +123,11 @@
       <list>
         <option value="$PROJECT_DIR$/js/agency.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/agency.css" />
-        <option value="$PROJECT_DIR$/php/modules/4.team.php" />
         <option value="$PROJECT_DIR$/php/modules/5.music.php" />
         <option value="$PROJECT_DIR$/php/modules/2.nav.php" />
+        <option value="$PROJECT_DIR$/php/modules/4.team.php" />
+        <option value="$PROJECT_DIR$/php/modules/3.header.php" />
+        <option value="$PROJECT_DIR$/css/agency.css" />
       </list>
     </option>
   </component>
@@ -320,12 +329,12 @@
       <workItem from="1484027748604" duration="6025000" />
       <workItem from="1484198344751" duration="6684000" />
       <workItem from="1484502133862" duration="1341000" />
-      <workItem from="1484716516643" duration="535000" />
+      <workItem from="1484716516643" duration="1810000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33004000" />
+    <option name="totallyTimeSpent" value="34279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="976" extended-state="6" />
@@ -654,14 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/agency.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8280">
-          <caret line="552" column="1" lean-forward="false" selection-start-line="552" selection-start-column="1" selection-end-line="552" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/agency.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -704,10 +705,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/agency.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="365" column="17" lean-forward="false" selection-start-line="365" selection-start-column="17" selection-end-line="365" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/modules/3.header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/modules/4.team.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        <state relative-caret-position="15">
+          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
           <folding />
         </state>
       </provider>
