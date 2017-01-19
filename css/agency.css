@@ -296,47 +296,51 @@ header .intro-text {
   padding-top: 125px;
   padding-bottom: 100px;
 }
-@media (max-width: 768px) {
-  header .intro-text {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-@media (min-width: 992px) {
-  header .intro-text {
-    padding-top: 75px;
-    padding-bottom: 80px;
-  }
 
-}
 header .intro-text, header .intro-song {
   color: white;
 }
 header .intro-text .intro-lead-in {
   font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
   font-style: italic;
-  font-size: 30px;
-  line-height: 30px;
-  margin-bottom: 25px;
+  font-size: 40px;
 }
-header .intro-text .intro-heading {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 28px;
-  width: 50%;
-  margin-bottom: 100px;
+@media (min-width: 768px) {
+  header .intro-text .intro-lead-in {
+    font-size: 50px;
+  }
 }
+@media (min-width: 992px) {
+  header .intro-text .intro-lead-in {
+    font-size: 60px;
+  }
+}
+
 header .intro-next {
   position: absolute;
   left: 0;
-  bottom: -44px;
+  bottom: 2vh;
+  color: #FFF;
+  text-align: left;
+  background: rgba(255,255,255,0.75);
+  padding: 20px 50px;
 }
+header .intro-next .intro-song {
+  margin: 0 auto;
+}
+
 header .intro-next .intro-song p,
 header .intro-next .intro-song .fa
 {
-  font-size: 18px;
+  font-size: 16px;
   color: #333;
+}
+header .intro-next .intro-song a {
+  text-align: center;
+}
+header .intro-next .intro-song .fa
+{
+  text-align: center;
 }
 header .intro-next .intro-song .fa-quote-left {
   vertical-align: top;
@@ -344,33 +348,16 @@ header .intro-next .intro-song .fa-quote-left {
 header .intro-next .intro-song .fa-quote-right {
   vertical-align: top;
 }
-.intro-next {
-  color: #FFF;
-  text-align: center;
-  width: 100%;
-  background: rgba(255,255,255,0.75);
-}
 
 @media (min-width: 768px) {
-  header .intro-text .intro-heading {
-    font-size: 40px;
-    line-height: 60px;
-    margin-bottom: 150px;
+  header .intro-next {
   }
   header .intro-next .intro-song p {
-    font-size: 28px;
+    font-size: 24px;
+
   }
 }
 @media (min-width: 992px) {
-  header .intro-text .intro-lead-in {
-    font-size: 30px;
-    line-height: 40px;
-    margin-bottom: 25px;
-  }
-  header .intro-text .intro-heading {
-    font-size: 40px;
-    line-height: 75px;
-  }
   header .intro-next .intro-song p {
     font-size: 36px;
   }
@@ -409,9 +396,9 @@ section h3.section-subheading {
   background-image: url("../img/team-bg.jpg");
   top: 0;
 }
-@media (min-width: 992px) {
+@media (max-width: 768px) {
   #team .hero {
-    background-image: url("../img/team-bg.jpg");
+    background-image: url("../img/team-bg-768w.jpg");
   }
 }
 @media (max-width: 992px) {
@@ -419,11 +406,12 @@ section h3.section-subheading {
     background-image: url("../img/team-bg-992w.jpg");
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 992px) {
   #team .hero {
-    background-image: url("../img/team-bg-768w.jpg");
+    background-image: url("../img/team-bg.jpg");
   }
 }
+
 
 #team .team-catchphrase {
   position: absolute;
@@ -438,24 +426,134 @@ section h3.section-subheading {
   font-size: 50px;
 }
 .team-member-bubble {
+  position: absolute;
 
 }
 .team-member-bubble .fa {
   color: #fff;
   font-size: 4em;
+
 }
 .team-member-outerLeft {
-  position: absolute;
+  transform: rotate(180deg);
 }
 .team-member-innerLeft {
-  position: absolute;
 }
 .team-member-innerRight {
-  position: absolute;
 }
 .team-member-outerRight {
-  position: absolute;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
+
+@media (max-width: 1200px) {
+  .team-member-outerLeft {
+    top: 190px;
+    left: 125px;
+  }
+  .team-member-innerLeft {
+    top: 125px;
+    left: 400px;
+  }
+  .team-member-innerRight {
+    top: 110px;
+    left: 595px;
+  }
+  .team-member-outerRight {
+    top: 175px;
+    left: 695px;
+  }
+
+}
+@media (min-width: 1200px) {
+  .team-member-outerLeft {
+    top: 25%;
+    left: 11%;
+  }
+  .team-member-innerLeft {
+    top: 17%;
+    left: 34%;
+  }
+  .team-member-innerRight {
+    top: 16%;
+    left: 50%;
+  }
+  .team-member-outerRight {
+    top: 23%;
+    left: 58%;
+  }
+
+}
+@media (min-width: 1300px) {
+  .team-member-outerLeft {
+    top: 27%;
+    left: 11%;
+  }
+  .team-member-innerLeft {
+    top: 18%;
+    left: 34%;
+  }
+  .team-member-innerRight {
+    top: 17%;
+    left: 50%;
+  }
+  .team-member-outerRight {
+    top: 26%;
+    left: 59%;
+  }
+
+}
+@media (min-width: 1400px) {
+  .team-member-outerLeft {
+    top: 30%;
+    left: 12%;
+  }
+  .team-member-innerLeft {
+    top: 20%;
+    left: 34%;
+  }
+  .team-member-innerRight {
+    top: 19%;
+    left: 50%;
+  }
+  .team-member-outerRight {
+    top: 30%;
+    left: 59%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .team-member-outerLeft {
+    top: 32%;
+    left: 12%;
+  }
+  .team-member-innerLeft {
+    top: 22%;
+    left: 34%;
+  }
+  .team-member-innerRight {
+    top: 21%;
+    left: 50%;
+  }
+  .team-member-outerRight {
+    top: 35%;
+    left: 59%;
+  }
+}
+
+
+
+
+
+
 
 .team-member {
   text-align: center;
