@@ -344,6 +344,16 @@ header .intro-text .intro-lead-in {
     font-style: italic;
     font-size: 32px;
 }
+@media (max-width: 768px) {
+    header .intro-text {
+        padding-top: 50px;
+    }
+
+    header .hero {
+        top: 10vh;
+        height: 80vh;
+    }
+}
 
 @media (min-width: 768px) {
     header .intro-text .intro-lead-in {
@@ -352,6 +362,10 @@ header .intro-text .intro-lead-in {
 }
 
 @media (min-width: 992px) {
+    header .intro-text {
+        padding-top: 150px;
+    }
+
     header .intro-text .intro-lead-in {
         font-size: 60px;
     }
@@ -451,7 +465,7 @@ section h3.section-subheading {
     }
 
     #team-member-bubbles .hero {
-
+        height: 95vh;
     }
 }
 
@@ -500,9 +514,12 @@ section h3.section-subheading {
 
 .team-member-bubble {
     position: absolute;
-
 }
 
+.team-member-bubble .fa:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}
 .team-member-bubble .fa {
     color: #fff;
     font-size: 4em;
