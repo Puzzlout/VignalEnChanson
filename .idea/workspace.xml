@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cf8cd10-aa27-4548-b0c7-b5302c3ae053" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/agency.css" afterPath="$PROJECT_DIR$/css/agency.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/01 Approche approche.m4a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/02 Le blues du cycliste.m4a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/03 Un beau trésor.m4a" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -323,12 +323,12 @@
       <workItem from="1484198344751" duration="6684000" />
       <workItem from="1484502133862" duration="1341000" />
       <workItem from="1484716516643" duration="9819000" />
-      <workItem from="1484888784018" duration="4173000" />
+      <workItem from="1484888784018" duration="4336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46461000" />
+    <option name="totallyTimeSpent" value="46624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="976" extended-state="6" />
