@@ -194,7 +194,7 @@ fieldset[disabled] .btn-xl.active {
     background-repeat: no-repeat;
     position: relative;
     /*top: 5vh;*/
-    height: 90%;
+    height: 100%;
 }
 
 .navbar-custom {
@@ -306,7 +306,7 @@ header {
     width: 100%;
     min-width: 320px;
     background-color: #000;
-    height: 110vh;
+    height: 100vh;
 }
 
 header .hero {
@@ -333,6 +333,7 @@ header .hero {
 
 header .intro-text {
     padding-top: 100px;
+    padding-left: 20px;
 }
 
 header .intro-text, header .intro-song {
@@ -344,9 +345,10 @@ header .intro-text .intro-lead-in {
     font-style: italic;
     font-size: 32px;
 }
+
 @media (max-width: 768px) {
     header .intro-text {
-        padding-top: 50px;
+        padding-top: 10px;
     }
 
     header .hero {
@@ -373,23 +375,52 @@ header .intro-text .intro-lead-in {
 
 header .intro-next {
     position: absolute;
-    /*left: 0;*/
     bottom: 0;
-    color: #FFF;
     text-align: left;
-    background: rgba(255, 255, 255, 0.75);
     padding: 20px 30px;
-    /*width: 100%;*/
 }
 
 header .intro-next .intro-song {
     margin: 0 auto;
 }
 
-header .intro-next .intro-song p,
+header .intro-next .intro-song p {
+    font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    text-shadow: 1px 1px #666;
+    font-size: 14px;/*Default font*/
+    font-size: 20px;/*Dancing script font*/
+    line-height: 1em;
+}
 header .intro-next .intro-song .fa {
-    font-size: 14px;
-    color: #333;
+    font-size: smaller;
+}
+
+@media (max-width: 768px) {
+    header .intro-next {
+        bottom: -12vh;
+    }
+}
+
+@media (min-width: 768px) {
+    header .intro-next {
+        bottom: 10vh;
+    }
+
+    header .intro-next .intro-song p {
+        font-size: 16px;/*Default font*/
+        font-size: 24px;/*Dancing script font*/
+    }
+}
+
+@media (min-width: 992px) {
+    header .intro-next {
+        bottom: 2vh;
+    }
+
+    header .intro-next .intro-song p {
+        font-size: 20px;/*Default font*/
+        font-size: 28px;/*Dancing script font*/
+    }
 }
 
 header .intro-next .intro-song a {
@@ -408,25 +439,10 @@ header .intro-next .intro-song .fa-quote-right {
     vertical-align: top;
 }
 
-@media (min-width: 768px) {
-    header .intro-next {
-    }
-
-    header .intro-next .intro-song p {
-        font-size: 16px;
-
-    }
-}
-
-@media (min-width: 992px) {
-    header .intro-next .intro-song p {
-        font-size: 20px;
-    }
-}
-
 .intro-next .next-button {
     width: 100%;
     text-align: center;
+    color: #FFFFFF;
 }
 
 section {
@@ -520,6 +536,7 @@ section h3.section-subheading {
     cursor: pointer;
     color: rgba(255, 255, 255, 0.5);
 }
+
 .team-member-bubble .fa {
     color: #fff;
     font-size: 4em;
