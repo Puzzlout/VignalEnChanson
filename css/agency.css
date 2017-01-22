@@ -520,11 +520,14 @@ section h3.section-subheading {
 }
 
 #team .team-catchphrase h2 {
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    color: #FFFFFF;
+    text-shadow: 1px 1px #666;
+    text-transform: none;
+    font-size: larger;
 }
 
 #team .overlay-white {
-    background: rgba(255, 255, 255, 0.5);
     font-size: 50px;
 }
 
@@ -679,6 +682,9 @@ section h3.section-subheading {
     }
 }
 
+#team-medals h2 {
+    font-size: 24px;
+}
 .team-member {
     text-align: center;
     margin-bottom: 50px;
