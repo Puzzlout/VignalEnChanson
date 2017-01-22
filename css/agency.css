@@ -527,7 +527,7 @@ section h3.section-subheading {
     font-size: larger;
 }
 
-#team .overlay-white {
+#team .team-catchphrase {
     font-size: 50px;
 }
 
@@ -577,17 +577,17 @@ section h3.section-subheading {
 
     .team-member-innerLeft {
         top: 125px;
-        left: 400px;
+        left: 420px;
     }
 
     .team-member-innerRight {
         top: 110px;
-        left: 595px;
+        left: 625px;
     }
 
     .team-member-outerRight {
         top: 175px;
-        left: 695px;
+        left: 720px;
     }
 
 }
@@ -1016,13 +1016,13 @@ ul.social-buttons li a:active {
     outline: none;
 }
 
-.gallery-modal .modal-dialog {
+.element-modal .modal-dialog {
     margin: 0;
     height: 100%;
     width: auto;
 }
 
-.gallery-modal .modal-content {
+.element-modal .modal-content {
     border-radius: 0;
     background-clip: border-box;
     -webkit-box-shadow: none;
@@ -1032,43 +1032,43 @@ ul.social-buttons li a:active {
     text-align: center;
 }
 
-.gallery-modal .modal-content h2 {
+.element-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em;
 }
 
-.gallery-modal .modal-content p {
+.element-modal .modal-content p {
     margin-bottom: 30px;
 }
 
-.gallery-modal .modal-content p.item-intro {
+.element-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-size: 16px;
 }
 
-.gallery-modal .modal-content ul.list-inline {
+.element-modal .modal-content ul.list-inline {
     margin-bottom: 30px;
     margin-top: 0;
 }
 
-.gallery-modal .modal-content img {
+.element-modal .modal-content img {
     margin-bottom: 30px;
 }
 
-.gallery-modal .close-modal {
+.element-modal .close-modal {
     color: #000;
     background-color: transparent;
     cursor: pointer;
     z-index: 2000;
 }
 
-.gallery-modal .close-modal:hover {
+.element-modal .close-modal:hover {
     opacity: 0.3;
 }
 
-.gallery-modal .close-modal .lr {
+.element-modal .close-modal .lr {
     width: 1px;
     margin-left: 35px;
     background-color: #fff;
@@ -1080,7 +1080,7 @@ ul.social-buttons li a:active {
     z-index: 1051;
 }
 
-.gallery-modal .close-modal .lr .rl {
+.element-modal .close-modal .lr .rl {
     width: 1px;
     background-color: #fff;
     transform: rotate(90deg);
@@ -1091,7 +1091,7 @@ ul.social-buttons li a:active {
     z-index: 1052;
 }
 
-.gallery-modal .close-modal {
+.element-modal .close-modal {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -1099,13 +1099,13 @@ ul.social-buttons li a:active {
     right: 30px;
 }
 
-.gallery-modal .close-modal .lr,
-.gallery-modal .close-modal .lr .rl {
+.element-modal .close-modal .lr,
+.element-modal .close-modal .lr .rl {
     height: 40px;
 }
 
 @media (min-width: 992px) {
-    .gallery-modal .close-modal {
+    .element-modal .close-modal {
         position: absolute;
         width: 75px;
         height: 75px;
@@ -1113,13 +1113,13 @@ ul.social-buttons li a:active {
         right: 25px;
     }
 
-    .gallery-modal .close-modal .lr,
-    .gallery-modal .close-modal .lr .rl {
+    .element-modal .close-modal .lr,
+    .element-modal .close-modal .lr .rl {
         height: 75px;
     }
 }
 
-.gallery-modal .modal-backdrop {
+.element-modal .modal-backdrop {
     opacity: 0;
     display: none;
 }
@@ -1132,6 +1132,29 @@ ul.social-buttons li a:active {
 .modal-body .btn-close-modal:hover {
     color: #666666;
     border: 1px solid #666666;
+}
+
+.team-member-modal-content {
+    background-color: transparent;
+}
+
+.team-member-modal-body {
+    margin-top: 10vh;
+    padding: 100px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 400px;
+}
+.team-member-modal-body > .team-member {
+    display: block;
+}
+.team-member-modal-body h4 {
+    font-size: 36px;
+}
+.team-member-modal-body p {
+    font-size: 24px;
+    line-height: 1em;
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 
 ::-moz-selection {
@@ -1167,23 +1190,3 @@ body {
     padding: 10px;
 }
 
-.slide-control {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(50%);
-    -moz-transform: translateY(50%);
-    -ms-transform: translateY(50%);
-    -o-transform: translateY(50%);
-    transform: translateY(50%);
-    color: #fff;
-    z-index: 2000;
-}
-
-.prev-slide {
-    left: 30px;
-
-}
-
-.next-slide {
-    right: 30px;
-}
