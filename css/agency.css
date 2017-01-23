@@ -698,18 +698,21 @@ section h3.section-subheading {
     }
 }
 
-#music .container {
-    padding: 50px 10px;
+#music .video-content a,
+#music .video-content .fa {
+    margin: 75px 20px;
+    color: #333;
+    line-height: 1em;
+    font-size: 2.5em;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
 }
-
-#music .row {
-    background: rgba(12, 12, 12, 0.9);
+#music .video-content .fa {
+    color: rgba(181,12,20,1);
 }
-
-#music .music-header {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    padding-top: 50px;
+#music .video-content:hover {
+    color: rgba(181,12,20,0.8);
 }
 
 #music .music-content {
@@ -717,10 +720,6 @@ section h3.section-subheading {
     border-bottom-right-radius: 4px;
     padding-bottom: 50px;
 
-}
-
-#music h2, #music h3 {
-    color: #fff;
 }
 
 .player .audio-wrapper {
@@ -790,11 +789,13 @@ span.fa {
     margin-right: 10px;
 }
 
+#music .gallery-item,
 #gallery .gallery-item {
     margin: 0 0 15px;
     right: 0;
 }
 
+#music .gallery-item .gallery-link,
 #gallery .gallery-item .gallery-link {
     display: block;
     position: relative;
@@ -802,6 +803,7 @@ span.fa {
     margin: 0 auto;
 }
 
+#music .gallery-item .gallery-link .gallery-hover,
 #gallery .gallery-item .gallery-link .gallery-hover {
     background: rgba(204, 204, 204, 0.75);
     position: absolute;
@@ -813,10 +815,12 @@ span.fa {
     -moz-transition: all ease 0.5s;
 }
 
+#music .gallery-item .gallery-link .gallery-hover:hover,
 #gallery .gallery-item .gallery-link .gallery-hover:hover {
     opacity: 1;
 }
 
+#music .gallery-item .gallery-link .gallery-hover .gallery-hover-content,
 #gallery .gallery-item .gallery-link .gallery-hover .gallery-hover-content {
     position: absolute;
     width: 100%;
@@ -828,15 +832,17 @@ span.fa {
     color: white;
 }
 
+#music .gallery-item .gallery-link .gallery-hover .gallery-hover-content i,
 #gallery .gallery-item .gallery-link .gallery-hover .gallery-hover-content i {
     margin-top: -12px;
 }
 
-#gallery .gallery-item .gallery-link .gallery-hover .gallery-hover-content h3,
+#music .gallery-item .gallery-link .gallery-hover .gallery-hover-content h3,
 #gallery .gallery-item .gallery-link .gallery-hover .gallery-hover-content h4 {
     margin: 0;
 }
 
+#music .gallery-item .gallery-caption,
 #gallery .gallery-item .gallery-caption {
     max-width: 400px;
     margin: 0 auto;
@@ -845,11 +851,13 @@ span.fa {
     padding: 25px;
 }
 
+#music .gallery-item .gallery-caption h4,
 #gallery .gallery-item .gallery-caption h4 {
     text-transform: none;
     margin: 0;
 }
 
+#music .gallery-item .gallery-caption p,
 #gallery .gallery-item .gallery-caption p {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
@@ -857,15 +865,18 @@ span.fa {
     margin: 0;
 }
 
+#music img,
 #gallery img {
     width: 100%;
 }
 
+#music *,
 #gallery * {
     z-index: 2;
 }
 
 @media (min-width: 767px) {
+    #music .gallery-item,
     #gallery .gallery-item {
         margin: 0 0 30px;
     }

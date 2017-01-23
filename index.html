@@ -295,15 +295,23 @@
     <div class="container">
         <div class="row music-header">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Titre section musique</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h2 class="section-heading">Extraits</h2>
+                <h3 class="section-subheading text-muted">Vidéo, enregistrement audio, photos.</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="container-fluid">
+                    <div class="row video-content">
+                        <div class="col-lg-12">
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <i class="fa fa-youtube-square"></i>
+                                Rejoignez notre chaine YouTube
+                            </a>
+                        </div>
+                    </div>
                     <div class="row music-content">
-                        <div class="player col-md-8 col-md-offset-2">
+                        <div class="player col-lg-12">
                             <div class="audio-wrapper">
                                 <audio id="audio" tabindex="0" preload="auto" controls="controls">
                                     <source type="audio/mp3"
@@ -324,7 +332,7 @@
                                 <div class="playlist-controls"></div>
                                 <ul id="playlist">
                                     <li class="audio-track audio-track-even active">
-                                        <a href="https://1268182399.rsc.cdn77.org/media/audio/01-approche_approche.mp3">
+                                        <a href="https://1268182399.rsc.cdn77.org/media/audio/1-approche.mp3">
                                 <span>
                                     <i class="fa fa-play" aria-hidden="true"></i>
                                 </span>
@@ -334,17 +342,17 @@
                                         </a>
                                     </li>
                                     <li class="audio-track audio-track-odd ">
-                                        <a href="https://1268182399.rsc.cdn77.org/media/audio/03-un_beau_tresor.mp3">
+                                        <a href="https://1268182399.rsc.cdn77.org/media/audio/2-un-beau-tresor.mp3">
                                             <i class="fa fa-play" aria-hidden="true"></i>
                                             <span>Un beau trésor</span>
                                         </a>
                                     </li>
-                                    <li class="audio-track audio-track-even ">
-                                        <a href="https://1268182399.rsc.cdn77.org/media/audio/02-le_blues_du_cycliste.mp3">
-                                            <i class="fa fa-play" aria-hidden="true"></i>
-                                            <span>Le blues du cycliste</span>
-                                        </a>
-                                    </li>
+                                    <!--<li class="audio-track audio-track-even ">-->
+                                        <!--<a href="https://1268182399.rsc.cdn77.org/media/audio/02-le_blues_du_cycliste.mp3">-->
+                                            <!--<i class="fa fa-play" aria-hidden="true"></i>-->
+                                            <!--<span>Le blues du cycliste</span>-->
+                                        <!--</a>-->
+                                    <!--</li>-->
                                 </ul>
                             </div>
                         </div>
@@ -352,7 +360,7 @@
                 </div>
             </div>
             <div class="col-md-6 hide-from-768w">
-                <div class="col-md-4 col-sm-6 gallery-item">
+                <div class="col-lg-6 gallery-item">
                     <a href="#galleryModal1" class="gallery-link" data-toggle="modal">
                         <div class="gallery-hover">
                             <div class="gallery-hover-content">
@@ -361,12 +369,8 @@
                         </div>
                         <img src="img/gallery/1-preview.jpg" class="img-responsive" alt="Photo Galerie 1">
                     </a>
-                    <div class="gallery-caption">
-                        <h4>Titre Image 1</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
                 </div>
-                <div class="col-md-4 col-sm-6 gallery-item">
+                <div class="col-lg-6 gallery-item">
                     <a href="#galleryModal4" class="gallery-link" data-toggle="modal">
                         <div class="gallery-hover">
                             <div class="gallery-hover-content">
@@ -375,10 +379,6 @@
                         </div>
                         <img src="img/gallery/4-preview.jpg" class="img-responsive" alt="Photo Galerie 4">
                     </a>
-                    <div class="gallery-caption">
-                        <h4>Titre Image 4</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -386,104 +386,90 @@
 </section>
 
 <!-- Portfolio Grid Section -->
-<section id="gallery" class="bg-light-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Titre section galerie</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 gallery-item">
-                <a href="#galleryModal1" class="gallery-link" data-toggle="modal">
-                    <div class="gallery-hover">
-                        <div class="gallery-hover-content">
-                            <i class="fa fa-expand fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/gallery/1-preview.jpg" class="img-responsive" alt="Photo Galerie 1">
-                </a>
-                <div class="gallery-caption">
-                    <h4>Titre Image 1</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 gallery-item">
-                <a href="#galleryModal2" class="gallery-link" data-toggle="modal">
-                    <div class="gallery-hover">
-                        <div class="gallery-hover-content">
-                            <i class="fa fa-expand fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/gallery/2-preview.jpg" class="img-responsive" alt="Photo Galerie 2">
-                </a>
-                <div class="gallery-caption">
-                    <h4>Titre Image 2</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 gallery-item">
-                <a href="#galleryModal3" class="gallery-link" data-toggle="modal">
-                    <div class="gallery-hover">
-                        <div class="gallery-hover-content">
-                            <i class="fa fa-expand fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/gallery/3-preview.jpg" class="img-responsive" alt="Photo Galerie 3">
-                </a>
-                <div class="gallery-caption">
-                    <h4>Titre Image 3</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 gallery-item">
-                <a href="#galleryModal4" class="gallery-link" data-toggle="modal">
-                    <div class="gallery-hover">
-                        <div class="gallery-hover-content">
-                            <i class="fa fa-expand fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/gallery/4-preview.jpg" class="img-responsive" alt="Photo Galerie 4">
-                </a>
-                <div class="gallery-caption">
-                    <h4>Titre Image 4</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 gallery-item">
-                <a href="#galleryModal5" class="gallery-link" data-toggle="modal">
-                    <div class="gallery-hover">
-                        <div class="gallery-hover-content">
-                            <i class="fa fa-expand fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/gallery/5-preview.jpg" class="img-responsive" alt="Photo Galerie 5">
-                </a>
-                <div class="gallery-caption">
-                    <h4>Titre Image 5</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-            </div>
-            <!--<div class="col-md-4 col-sm-6 gallery-item">
-                <a href="#galleryModal6" class="gallery-link" data-toggle="modal">
-                    <div class="gallery-hover">
-                        <div class="gallery-hover-content">
-                            <i class="fa fa-expand fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/gallery/6.jpg" class="img-responsive" alt="">
-                </a>
-                <div class="gallery-caption">
-                    <h4>Titre Image 6</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-            </div>-->
-        </div>
-    </div>
-</section>
+<!--<section id="gallery" class="bg-light-gray">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-12 text-center">-->
+                <!--<h2 class="section-heading">Titre section galerie</h2>-->
+                <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+            <!--<div class="col-md-4 col-sm-6 gallery-item">-->
+                <!--<a href="#galleryModal1" class="gallery-link" data-toggle="modal">-->
+                    <!--<div class="gallery-hover">-->
+                        <!--<div class="gallery-hover-content">-->
+                            <!--<i class="fa fa-expand fa-3x"></i>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<img src="img/gallery/1-preview.jpg" class="img-responsive" alt="Photo Galerie 1">-->
+                <!--</a>-->
+                <!--<div class="gallery-caption">-->
+                    <!--<h4>Titre Image 1</h4>-->
+                    <!--<p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-sm-6 gallery-item">-->
+                <!--<a href="#galleryModal2" class="gallery-link" data-toggle="modal">-->
+                    <!--<div class="gallery-hover">-->
+                        <!--<div class="gallery-hover-content">-->
+                            <!--<i class="fa fa-expand fa-3x"></i>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<img src="img/gallery/2-preview.jpg" class="img-responsive" alt="Photo Galerie 2">-->
+                <!--</a>-->
+                <!--<div class="gallery-caption">-->
+                    <!--<h4>Titre Image 2</h4>-->
+                    <!--<p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-sm-6 gallery-item">-->
+                <!--<a href="#galleryModal3" class="gallery-link" data-toggle="modal">-->
+                    <!--<div class="gallery-hover">-->
+                        <!--<div class="gallery-hover-content">-->
+                            <!--<i class="fa fa-expand fa-3x"></i>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<img src="img/gallery/3-preview.jpg" class="img-responsive" alt="Photo Galerie 3">-->
+                <!--</a>-->
+                <!--<div class="gallery-caption">-->
+                    <!--<h4>Titre Image 3</h4>-->
+                    <!--<p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+            <!--<div class="col-md-4 col-sm-6 gallery-item">-->
+                <!--<a href="#galleryModal4" class="gallery-link" data-toggle="modal">-->
+                    <!--<div class="gallery-hover">-->
+                        <!--<div class="gallery-hover-content">-->
+                            <!--<i class="fa fa-expand fa-3x"></i>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<img src="img/gallery/4-preview.jpg" class="img-responsive" alt="Photo Galerie 4">-->
+                <!--</a>-->
+                <!--<div class="gallery-caption">-->
+                    <!--<h4>Titre Image 4</h4>-->
+                    <!--<p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-sm-6 gallery-item">-->
+                <!--<a href="#galleryModal5" class="gallery-link" data-toggle="modal">-->
+                    <!--<div class="gallery-hover">-->
+                        <!--<div class="gallery-hover-content">-->
+                            <!--<i class="fa fa-expand fa-3x"></i>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<img src="img/gallery/5-preview.jpg" class="img-responsive" alt="Photo Galerie 5">-->
+                <!--</a>-->
+                <!--<div class="gallery-caption">-->
+                    <!--<h4>Titre Image 5</h4>-->
+                    <!--<p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 <!-- Contact Section -->
 <section id="contact">
@@ -570,7 +556,7 @@
 <!-- Use the modals below to showcase the image of the gallery in fullscreen -->
 
 <!-- Portfolio Modal 1 -->
-<div class="gallery-modal modal fade" id="galleryModal1" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="element-modal modal fade" id="galleryModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -614,7 +600,7 @@
 </div>
 
 <!-- Portfolio Modal 2 -->
-<div class="gallery-modal modal fade" id="galleryModal2" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="element-modal modal fade" id="galleryModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -657,7 +643,7 @@
 </div>
 
 <!-- Portfolio Modal 3 -->
-<div class="gallery-modal modal fade" id="galleryModal3" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="element-modal modal fade" id="galleryModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -701,7 +687,7 @@
 </div>
 
 <!-- Portfolio Modal 4 -->
-<div class="gallery-modal modal fade" id="galleryModal4" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="element-modal modal fade" id="galleryModal4" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -745,7 +731,7 @@
 </div>
 
 <!-- Portfolio Modal 5 -->
-<div class="gallery-modal modal fade" id="galleryModal5" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="element-modal modal fade" id="galleryModal5" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
