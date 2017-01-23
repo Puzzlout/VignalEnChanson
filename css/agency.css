@@ -450,9 +450,7 @@ section {
 }
 
 section h2.section-heading {
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
+    padding: 40px 0;
 }
 
 section h3.section-subheading {
@@ -490,24 +488,15 @@ section h3.section-subheading {
     height: 100vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     #team-member-bubbles {
         display: none;
     }
-
 }
-
-@media (min-width: 768px) {
-    #team .hero {
-        background-image: url("../img/team-bg-992w.jpg");
-    }
-
+@media (min-width: 992px) {
     #team-medals {
         display: none;
     }
-}
-
-@media (min-width: 992px) {
     #team .hero {
         background-image: url("../img/team-bg.jpg");
     }
@@ -577,17 +566,17 @@ section h3.section-subheading {
 
     .team-member-innerLeft {
         top: 125px;
-        left: 420px;
+        left: 410px;
     }
 
     .team-member-innerRight {
         top: 110px;
-        left: 625px;
+        left: 600px;
     }
 
     .team-member-outerRight {
         top: 175px;
-        left: 720px;
+        left: 690px;
     }
 
 }
@@ -682,9 +671,6 @@ section h3.section-subheading {
     }
 }
 
-#team-medals h2 {
-    font-size: 24px;
-}
 .team-member {
     text-align: center;
     margin-bottom: 50px;
@@ -705,7 +691,7 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
     .team-member {
         display: none;
@@ -1140,9 +1126,9 @@ ul.social-buttons li a:active {
 
 .team-member-modal-body {
     margin-top: 10vh;
-    padding: 100px;
+    padding: 25px;
     background: rgba(255,255,255,0.9);
-    border-radius: 400px;
+    border-radius: 10px;
 }
 .team-member-modal-body > .team-member {
     display: block;
@@ -1152,7 +1138,7 @@ ul.social-buttons li a:active {
 }
 .team-member-modal-body p {
     font-size: 24px;
-    line-height: 1em;
+    line-height: 1.25em;
     margin-top: 30px;
     margin-bottom: 0;
 }
