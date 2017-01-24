@@ -387,10 +387,11 @@ header .intro-next .intro-song {
 header .intro-next .intro-song p {
     font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
     text-shadow: 1px 1px #666;
-    font-size: 14px;/*Default font*/
-    font-size: 20px;/*Dancing script font*/
+    font-size: 14px; /*Default font*/
+    font-size: 20px; /*Dancing script font*/
     line-height: 1em;
 }
+
 header .intro-next .intro-song .fa {
     font-size: smaller;
 }
@@ -407,8 +408,8 @@ header .intro-next .intro-song .fa {
     }
 
     header .intro-next .intro-song p {
-        font-size: 16px;/*Default font*/
-        font-size: 24px;/*Dancing script font*/
+        font-size: 16px; /*Default font*/
+        font-size: 24px; /*Dancing script font*/
     }
 }
 
@@ -418,8 +419,8 @@ header .intro-next .intro-song .fa {
     }
 
     header .intro-next .intro-song p {
-        font-size: 20px;/*Default font*/
-        font-size: 28px;/*Dancing script font*/
+        font-size: 20px; /*Default font*/
+        font-size: 28px; /*Dancing script font*/
     }
 }
 
@@ -449,6 +450,12 @@ section {
     padding: 50px 0;
 }
 
+@media (min-width: 768px) {
+    section {
+        padding: 75px 0;
+    }
+}
+
 section h2.section-heading {
     padding: 40px 0;
 }
@@ -462,62 +469,61 @@ section h3.section-subheading {
     margin-bottom: 75px;
 }
 
-@media (min-width: 768px) {
-    section {
-        padding: 75px 0;
-    }
-}
-
 .service-heading {
     margin: 15px 0;
     text-transform: none;
 }
 
-@media (min-width: 768px) {
-    #team {
-        padding: 0;
-    }
+#team {
+    padding: 0;
+}
 
+#team-member-bubbles {
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    #team-member-bubbles {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
     #team-member-bubbles .hero {
         height: 95vh;
     }
 }
 
-#team-member-bubbles {
-    padding: 0;
-    height: 100vh;
-}
-
-@media (max-width: 992px) {
-    #team-member-bubbles {
-        display: none;
-    }
-}
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     #team-medals {
         display: none;
     }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    #team .hero {
+        background-image: url("../img/team-bg-768w.jpg");
+        background-size: contain;
+    }
+    #team-member-bubbles, #team-member-bubbles .hero {
+        height: inherit;
+    }
+}
+
+@media (min-width: 992px) {
     #team .hero {
         background-image: url("../img/team-bg.jpg");
     }
 }
 
-#team .team-catchphrase {
-    position: absolute;
-    bottom: 0;
-    padding: 0 20px;
+#team .team-no-hero {
+    display: none;
 }
 
-#team .team-catchphrase h2 {
-    font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
-    color: #FFFFFF;
-    text-shadow: 1px 1px #666;
-    text-transform: none;
-    font-size: larger;
-}
 
-#team .team-catchphrase {
-    font-size: 50px;
+@media (min-width: 768px) and (max-width: 992px) {
+    #team .team-no-hero {
+        display: block;
+        width: 100%;
+    }
 }
 
 .team-member-bubble {
@@ -558,7 +564,95 @@ section h3.section-subheading {
     transform: scale(-1, 1);
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 800px) {
+    .team-member-outerLeft {
+        top: 190px;
+        left: 15px;
+    }
+
+    .team-member-innerLeft {
+        top: 110px;
+        left: 300px;
+    }
+
+    .team-member-innerRight {
+        top: 110px;
+        left: 475px;
+    }
+
+    .team-member-outerRight {
+        top: 170px;
+        left: 575px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    .team-member-outerLeft {
+        top: 190px;
+        left: 35px;
+    }
+
+    .team-member-innerLeft {
+        top: 125px;
+        left: 320px;
+    }
+
+    .team-member-innerRight {
+        top: 110px;
+        left: 500px;
+    }
+
+    .team-member-outerRight {
+        top: 190px;
+        left: 600px;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 900px) {
+    .team-member-outerLeft {
+        top: 190px;
+        left: 35px;
+    }
+
+    .team-member-innerLeft {
+        top: 125px;
+        left: 320px;
+    }
+
+    .team-member-innerRight {
+        top: 110px;
+        left: 540px;
+    }
+
+    .team-member-outerRight {
+        top: 190px;
+        left: 640px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 992px) {
+    .team-member-outerLeft {
+        top: 190px;
+        left: 35px;
+    }
+
+    .team-member-innerLeft {
+        top: 125px;
+        left: 350px;
+    }
+
+    .team-member-innerRight {
+        top: 110px;
+        left: 575px;
+    }
+
+    .team-member-outerRight {
+        top: 190px;
+        left: 690px;
+    }
+}
+
+@media (min-width: 992px) {
     .team-member-outerLeft {
         top: 190px;
         left: 125px;
@@ -571,14 +665,13 @@ section h3.section-subheading {
 
     .team-member-innerRight {
         top: 110px;
-        left: 600px;
+        left: 620px;
     }
 
     .team-member-outerRight {
         top: 175px;
-        left: 690px;
+        left: 720px;
     }
-
 }
 
 @media (min-width: 1200px) {
@@ -671,6 +764,35 @@ section h3.section-subheading {
     }
 }
 
+#team .team-catchphrase-container {
+    position: absolute;
+}
+
+@media (min-width: 992px) {
+    #team .team-catchphrase-container {
+        position: relative;
+    }
+}
+#team .team-catchphrase {
+    position: absolute;
+    bottom: 0;
+    padding: 0 20px;
+}
+
+
+#team .team-catchphrase h2 {
+    font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    color: #FFFFFF;
+    text-shadow: 1px 1px #666;
+    text-transform: none;
+    font-size: larger;
+    padding: 0;
+}
+
+#team .team-catchphrase {
+    font-size: 50px;
+}
+
 .team-member {
     text-align: center;
     margin-bottom: 50px;
@@ -693,9 +815,6 @@ section h3.section-subheading {
 
 @media (min-width: 992px) {
 
-    .team-member {
-        display: none;
-    }
 }
 
 #music .video-content a,
@@ -708,11 +827,13 @@ section h3.section-subheading {
     text-align: center;
     vertical-align: middle;
 }
+
 #music .video-content .fa {
-    color: rgba(181,12,20,1);
+    color: rgba(181, 12, 20, 1);
 }
+
 #music .video-content:hover {
-    color: rgba(181,12,20,0.8);
+    color: rgba(181, 12, 20, 0.8);
 }
 
 #music .music-content {
@@ -1138,15 +1259,18 @@ ul.social-buttons li a:active {
 .team-member-modal-body {
     margin-top: 10vh;
     padding: 25px;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
 }
+
 .team-member-modal-body > .team-member {
     display: block;
 }
+
 .team-member-modal-body h4 {
     font-size: 36px;
 }
+
 .team-member-modal-body p {
     font-size: 24px;
     line-height: 1.25em;
