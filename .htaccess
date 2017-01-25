@@ -323,10 +323,10 @@ AddDefaultCharset utf-8
     RewriteEngine On
 
     # (2)
-    #Options +FollowSymlinks
+    Options +FollowSymlinks
 
     # (3)
-    Options +SymLinksIfOwnerMatch
+    #Options +SymLinksIfOwnerMatch
 
     # (4)
     # RewriteBase /
@@ -983,6 +983,3 @@ FileETag None
 #     RewriteRule ^(.+)\.(\d+)\.(bmp|css|cur|gif|ico|jpe?g|js|png|svgz?|webp|webmanifest)$ $1.$3 [L]
 # </IfModule>
 
-# redirect html pages to the root domain
-RewriteRule ^index\.html$ / [R=301,L]
-RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
