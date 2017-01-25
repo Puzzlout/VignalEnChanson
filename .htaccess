@@ -984,4 +984,5 @@ FileETag None
 # </IfModule>
 
 # redirect html pages to the root domain
-RewriteRule ^index\.html$ / [NC,R,L]
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
