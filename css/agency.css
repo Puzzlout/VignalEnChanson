@@ -665,12 +665,12 @@ section h3.section-subheading {
 
     .team-member-innerRight {
         top: 110px;
-        left: 620px;
+        left: 600px;
     }
 
     .team-member-outerRight {
         top: 175px;
-        left: 720px;
+        left: 690px;
     }
 }
 
@@ -764,13 +764,9 @@ section h3.section-subheading {
     }
 }
 
-#team .team-catchphrase-container {
-    position: absolute;
-}
-
 @media (min-width: 992px) {
     #team .team-catchphrase-container {
-        position: relative;
+        /*position: relative;*/
     }
 }
 #team .team-catchphrase {
