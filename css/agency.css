@@ -51,8 +51,6 @@ h4,
 h5,
 h6 {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
 }
 
 .img-centered {
@@ -776,7 +774,7 @@ section h3.section-subheading {
 }
 
 
-#team .team-catchphrase h2 {
+#team .team-catchphrase h1 {
     font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
     color: #FFFFFF;
     text-shadow: 1px 1px #666;
@@ -1076,6 +1074,8 @@ section#contact :-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
+    background: rgba(255,255,255,0.9);
+    border-radius: 4px;
 }
 
 footer {

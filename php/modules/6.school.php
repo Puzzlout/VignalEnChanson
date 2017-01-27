@@ -1,11 +1,11 @@
 <!-- Contact Section -->
-<section id="contact">
+<section id="school">
     <div class="overlay">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contactez-nous</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h1 class="section-heading">Scolaire</h1>
+                        <h2 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h2>
                 </div>
             </div>
             <div class="row">
@@ -26,8 +26,7 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="tel" class="form-control" placeholder="Votre numéro de téléphone *"
-                                           id="phone" required
-                                           data-validation-required-message="Veuillez saisir votre numéro de téléphone.">
+                                           id="phone">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -40,6 +39,7 @@
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
+                                <!--<div class="g-recaptcha" data-sitekey="6LdRWRMUAAAAANJmTvQOI0Z_KMJ130XZPHWZ351E"></div>-->
                                 <div id="success"></div>
                                 <button type="submit" class="btn btn-xl">Envoyer</button>
                             </div>

@@ -7,10 +7,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="apple-touch-fullscreen" content="yes">
-    <meta name="description" content="Vignal en Chanson">
+    <meta name="description" content="Bernard Vignal, Auteur compositeur, vous accueille sur son site.">
     <meta name="author" content="Bernard Vignal">
 
-    <title>Vignal en chanson</title>
+    <title>Bernard Vignal</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="css/agency.css?v4" rel="stylesheet">
+    <link href="css/agency.css?v6" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

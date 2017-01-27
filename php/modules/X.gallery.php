@@ -80,20 +80,6 @@
                     <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
             </div>
-            <!--<div class="col-md-4 col-sm-6 gallery-item">
-                <a href="#galleryModal6" class="gallery-link" data-toggle="modal">
-                    <div class="gallery-hover">
-                        <div class="gallery-hover-content">
-                            <i class="fa fa-expand fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/gallery/6.jpg" class="img-responsive" alt="">
-                </a>
-                <div class="gallery-caption">
-                    <h4>Titre Image 6</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-            </div>-->
         </div>
     </div>
 </section>
