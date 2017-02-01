@@ -65,6 +65,13 @@ h6 {
     background-color: #222222;
 }
 
+.overlay-dark {
+    background: rgba(12, 12, 12, 0.5);
+}
+.overlay-light {
+    background: rgba(255, 255, 255, 0.5);
+}
+
 .btn-primary {
     color: white;
     background-color: #fdfdfd;
@@ -195,6 +202,7 @@ fieldset[disabled] .btn-xl.active {
     height: 100%;
 }
 
+/* SECTION : NAVIGATION */
 .navbar-custom {
     background: rgba(0, 0, 0, 0.8);
     border-color: transparent;
@@ -299,6 +307,7 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+/* SECTION : HEADER */
 header {
     position: relative;
     width: 100%;
@@ -385,7 +394,7 @@ header .intro-next .intro-song {
 header .intro-next .intro-song p {
     font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
     text-shadow: 1px 1px #666;
-    font-size: 14px; /*Default font*/
+    /*font-size: 14px; !*Default font*!*/
     font-size: 20px; /*Dancing script font*/
     line-height: 1em;
 }
@@ -406,7 +415,7 @@ header .intro-next .intro-song .fa {
     }
 
     header .intro-next .intro-song p {
-        font-size: 16px; /*Default font*/
+        /*font-size: 16px; !*Default font*!*/
         font-size: 24px; /*Dancing script font*/
     }
 }
@@ -417,7 +426,7 @@ header .intro-next .intro-song .fa {
     }
 
     header .intro-next .intro-song p {
-        font-size: 20px; /*Default font*/
+        /*font-size: 20px; !*Default font*!*/
         font-size: 28px; /*Dancing script font*/
     }
 }
@@ -444,7 +453,8 @@ header .intro-next .intro-song .fa-quote-right {
     color: #FFFFFF;
 }
 
-section {
+/* */
+section .container {
     padding: 50px 0;
 }
 
@@ -454,11 +464,11 @@ section {
     }
 }
 
-section h2.section-heading {
+section h1.section-heading {
     padding: 40px 0;
 }
 
-section h3.section-subheading {
+section h2.section-subheading {
     font-size: 16px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: none;
@@ -467,11 +477,8 @@ section h3.section-subheading {
     margin-bottom: 75px;
 }
 
-.service-heading {
-    margin: 15px 0;
-    text-transform: none;
-}
 
+/*SECTION : TEAM*/
 #team {
     padding: 0;
 }
@@ -485,6 +492,7 @@ section h3.section-subheading {
         display: none;
     }
 }
+
 @media (min-width: 768px) {
     #team-member-bubbles .hero {
         height: 95vh;
@@ -496,11 +504,13 @@ section h3.section-subheading {
         display: none;
     }
 }
+
 @media (min-width: 768px) and (max-width: 992px) {
     #team .hero {
         background-image: url("../img/team-bg-768w.jpg");
         background-size: contain;
     }
+
     #team-member-bubbles, #team-member-bubbles .hero {
         height: inherit;
     }
@@ -515,7 +525,6 @@ section h3.section-subheading {
 #team .team-no-hero {
     display: none;
 }
-
 
 @media (min-width: 768px) and (max-width: 992px) {
     #team .team-no-hero {
@@ -550,11 +559,11 @@ section h3.section-subheading {
 }
 
 .team-member-outerRight {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
+    /*-webkit-transform: rotate(180deg);*/
+    /*-moz-transform: rotate(180deg);*/
+    /*-ms-transform: rotate(180deg);*/
+    /*-o-transform: rotate(180deg);*/
+    /*transform: rotate(180deg);*/
     -webkit-transform: scale(-1, 1);
     -moz-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
@@ -767,12 +776,12 @@ section h3.section-subheading {
         /*position: relative;*/
     }
 }
+
 #team .team-catchphrase {
     position: absolute;
     bottom: 0;
     padding: 0 20px;
 }
-
 
 #team .team-catchphrase h1 {
     font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
@@ -807,8 +816,26 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
-@media (min-width: 992px) {
+/*SECTION: MUSIC*/
+#music {
+    padding: 0;
+}
+@media (max-width: 768px) {
+    #music .hero {
+        background-image: url("../img/kidpic-bg-768w.jpg");
+        background-size: contain;
+    }
+}
 
+@media (min-width: 768px) {
+    #music .hero {
+        background-image: url("../img/kidpic-bg-992w.jpg");
+    }
+}
+@media (min-width: 1200px) {
+    #music .hero {
+        background-image: url("../img/kidpic-bg.jpg");
+    }
 }
 
 #music .video-content a,
@@ -997,9 +1024,7 @@ span.fa {
     }
 }
 
-aside.clients img {
-    margin: 50px auto;
-}
+/* SECTION: CONTACT */
 
 section#contact {
     background-color: #222222;
@@ -1010,10 +1035,6 @@ section#contact {
     padding: 0;
 }
 
-section#contact > .overlay {
-    background: rgba(12, 12, 12, 0.5);
-    padding: 100px 0;
-}
 
 section#contact .section-heading {
     color: white;
@@ -1074,9 +1095,11 @@ section#contact :-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 4px;
 }
+
+/* SECTION : FOOTER */
 
 footer {
     padding: 25px 0;
@@ -1086,16 +1109,12 @@ footer {
 footer span.copyright {
     line-height: 40px;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    text-transform: none;
 }
 
 footer ul.quicklinks {
     margin-bottom: 0;
     line-height: 40px;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    text-transform: none;
 }
 
 ul.social-buttons {
@@ -1299,7 +1318,7 @@ body {
 #viewport-spy {
     display: none;
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     margin-right: auto;
     margin-left: auto;
     background-color: #ac2925;
