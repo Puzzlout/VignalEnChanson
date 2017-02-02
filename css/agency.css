@@ -483,6 +483,10 @@ section h2.section-subheading {
     padding: 0;
 }
 
+#team .container {
+    padding: 0;
+}
+
 #team-member-bubbles {
     padding: 0;
 }
@@ -838,15 +842,37 @@ section h2.section-subheading {
     }
 }
 
+#music .video-content {
+    margin-bottom: 75px;
+}
+#music .music-content {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 992px) {
+    #music .video-content{
+        margin-bottom: 50px;
+    }
+    #music .music-content {
+        margin-bottom: 75px;
+    }
+}
+
+#music .video-content a {
+    display: inline-block;
+    width: 100%;
+}
 #music .video-content a,
 #music .video-content .fa {
-    margin: 75px 20px;
     color: #333;
     line-height: 1em;
     font-size: 2.5em;
     text-decoration: none;
     text-align: center;
     vertical-align: middle;
+}
+#music .video-content p {
+    font-size: 1em;
 }
 
 #music .video-content .fa {
@@ -860,18 +886,29 @@ section h2.section-subheading {
 #music .music-content {
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    padding-bottom: 50px;
-
+    border-radius: 4px;
+    border: 1px solid #777;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
+.player h2 {
+    border-bottom: 1px solid #666;
+    line-height: 40px;
+    padding: 0 4px;
+    padding-bottom: 20px;
+    margin-bottom: 12px;
+}
 .player .audio-wrapper {
     text-align: center;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    padding-bottom: 8px;
 }
 
 .player > div.audio-wrapper,
 .player > div.audio-list-wrapper,
 #playlist > ul > li > a {
-    padding: 0 20px;
     margin: 0 auto;
     min-width: 250px;
     max-width: 996px;
@@ -888,6 +925,13 @@ section h2.section-subheading {
     -webkit-margin-after: 0;
 }
 
+#playlist li.active {
+    background-color: #f2f2f2;
+}
+#playlist li:hover {
+    background-color: #efefef;
+}
+
 #playlist li a {
     display: inline-block;
     line-height: 60px;
@@ -895,7 +939,7 @@ section h2.section-subheading {
 }
 
 #playlist li a > span.fa {
-    color: #282828;
+    color: #000;
     font-family: inherit;
 }
 
@@ -905,26 +949,24 @@ section h2.section-subheading {
     text-decoration: none;
 }
 
-#playlist .audio-track a .fa-play {
-    padding: 0 20px;
+#playlist .audio-track a .fa {
+    padding-left: 12px;
+    padding-right: 5px;
 }
 
 #playlist .audio-track {
-    font-size: 2em;
+    font-size: larger;
+    border-bottom: 1px solid #666;
 }
 
-@media (max-width: 768px) {
-    #playlist .audio-track {
-        font-size: 1.5em;
-    }
+#playlist:last-child {
+    border-bottom: none;
 }
 
 #playlist .audio-track-even {
-    background-color: #f2f2f2;
 }
 
 #playlist .audio-track-odd {
-    background-color: #fdfdfd;
 }
 
 span.fa {
@@ -1022,6 +1064,12 @@ span.fa {
     #gallery .gallery-item {
         margin: 0 0 30px;
     }
+}
+
+/* SECTION: SCHOOL */
+
+#school .hero {
+    background-image: url('../img/kidpic-bg.jpg');
 }
 
 /* SECTION: CONTACT */
