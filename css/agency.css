@@ -1063,6 +1063,11 @@ span.fa {
     background-image: url('../img/kidpic-bg.jpg');
 }
 
+#school h2.section-subheading {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
 /* SECTION: CONTACT */
 
 section#contact {
