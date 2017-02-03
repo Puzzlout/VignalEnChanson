@@ -40,7 +40,6 @@
 
 <body id="page-top" class="index">
 
-<!-- Navigation -->
 <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -80,7 +79,6 @@
     <!-- /.container-fluid -->
 </nav>
 
-<!-- Header -->
 <header id="header">
     <div class="hero">
         <div class="container">
@@ -98,12 +96,12 @@
                 <div class="intro-song">
                     <p>
                         <span class="fa fa-quote-left"></span>
-                        Approche, approche écoute bien
+                        Approche approche écoute bien
                     </p>
                     <p>C'est la musique qui vient de loin</p>
-                    <p>Elle plane, elle flotte, elle nous traverse</p>
+                    <p>Elle plane elle flotte elle nous traverse</p>
                     <p>
-                        Elle vit, elle glisse elle nous caresse
+                        Elle vit elle glisse elle nous caresse
                         <span class="fa fa-quote-right"></span>
                     </p>
                 </div>
@@ -116,7 +114,6 @@
     </div>
 </header>
 
-<!-- Team Section -->
 <section id="team" class="bg-light-gray">
     <div id="team-member-bubbles">
         <div class="hero">
@@ -158,6 +155,18 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h1 class="section-heading">Tour de chant tout public</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-12 gallery-item">
+                    <a href="#galleryModal2" class="gallery-link" data-toggle="modal">
+                        <div class="gallery-hover">
+                            <div class="gallery-hover-content">
+                                <i class="fa fa-expand fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/gallery/2-preview.jpg" class="img-responsive" alt="Le groupe sur scène">
+                    </a>
                 </div>
             </div>
             <div class="row">
@@ -290,95 +299,101 @@
     </div>
 </div>
 
-
-<!-- Music Section -->
 <section id="music">
-    <div class="hero hero-fixed">
-        <div class="overlay-dark">
-            <div class="container">
-                <div class="row music-header">
-                    <div class="col-lg-12 text-center">
-                        <h1 class="section-heading">Extraits</h1>
-                        <h2 class="section-subheading text-muted">Vidéo, enregistrement audio, photos.</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="container-fluid">
+                    <div class="row video-content">
+                        <div class="col-lg-12">
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <i class="fa fa-angle-double-right"></i>
+                                <i class="fa fa-youtube-square"></i>
+                                <i class="fa fa-angle-double-left"></i>
+                                <h1>Rejoignez notre chaine YouTube ...</h1>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="container-fluid">
-                            <div class="row video-content">
-                                <div class="col-lg-12">
-                                    <a href="https://www.youtube.com/" target="_blank">
-                                        <i class="fa fa-youtube-square"></i>
-                                        <p>Rejoignez notre chaine YouTube</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row music-content">
-                                <div class="player col-lg-12">
-                                    <div class="audio-wrapper">
-                                        <audio id="audio" tabindex="0" preload="auto" controls="controls">
-                                            <source type="audio/mp3"
-                                                    src="https://1268182399.rsc.cdn77.org/media/audio/1-approche.mp3"/>
-                                            <div class="audio-no-html5">
-                                                <p>Désolé, votre navigateur ne permet pas de jouer notre musique.
-                                                    Veuillez
-                                                    télécharger l'un
-                                                    des navigateurs ci-dessous :</p>
-                                                <ul>
-                                                    <li><a href="https://www.google.fr/chrome">Google Chrome</a></li>
-                                                    <li><a href="https://www.mozilla.org/fr/firefox/new/">Firefox</a>
-                                                    </li>
-                                                    <li><a href="http://www.opera.com/fr">Opera</a></li>
-                                                </ul>
-                                            </div>
-                                        </audio>
+                    <div class="row music-content">
+                        <div class="player col-lg-12 col-no-pd">
+                            <div class="audio-wrapper">
+                                <h2>... et écoutez nos extraits en exclusivité</h2>
+                                <audio id="audio" tabindex="0" preload="auto" controls="controls">
+                                    <source type="audio/mp3"
+                                            src="audio/1-approche.mp3"/>
+                                    <div class="audio-no-html5">
+                                        <p>Désolé, votre navigateur ne permet pas de jouer notre musique.
+                                            Veuillez
+                                            télécharger l'un
+                                            des navigateurs ci-dessous :</p>
+                                        <ul>
+                                            <li><a href="https://www.google.fr/chrome">Google Chrome</a></li>
+                                            <li><a href="https://www.mozilla.org/fr/firefox/new/">Firefox</a>
+                                            </li>
+                                            <li><a href="http://www.opera.com/fr">Opera</a></li>
+                                        </ul>
                                     </div>
-                                    <div class="audio-list-wrapper">
-                                        <div class="playlist-controls"></div>
-                                        <ul id="playlist">
-                                            <li class="audio-track audio-track-even active">
-                                                <a href="https://1268182399.rsc.cdn77.org/media/audio/1-approche.mp3">
+                                </audio>
+                            </div>
+                            <div class="audio-list-wrapper">
+                                <div class="playlist-controls"></div>
+                                <ul id="playlist">
+                                    <li class="audio-track audio-track-even active">
+                                        <a href="audio/1-approche.mp3">
                                 <span>
                                     <i class="fa fa-play" aria-hidden="true"></i>
                                 </span>
-                                                    <span>
+                                            <span>
                                     <span class="audio-track-name">Approche, Approche</span>
                                 </span>
-                                                </a>
-                                            </li>
-                                            <li class="audio-track audio-track-odd ">
-                                                <a href="https://1268182399.rsc.cdn77.org/media/audio/2-un-beau-tresor.mp3">
-                                                    <i class="fa fa-play" aria-hidden="true"></i>
-                                                    <span>Un beau trésor</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                        </a>
+                                    </li>
+                                    <li class="audio-track audio-track-odd ">
+                                        <a href="audio/2-un-beau-tresor.mp3">
+                                            <i class="fa fa-play" aria-hidden="true"></i>
+                                            <span>Un beau trésor</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 hide-from-768w">
-                        <div class="col-lg-6 gallery-item">
-                            <a href="#galleryModal1" class="gallery-link" data-toggle="modal">
-                                <div class="gallery-hover">
-                                    <div class="gallery-hover-content">
-                                        <i class="fa fa-expand fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img src="img/gallery/1-preview.jpg" class="img-responsive" alt="Photo Galerie 1">
-                            </a>
+                </div>
+            </div>
+            <div class="col-md-6 hide-from-768w">
+                <div class="col-sm-6 col-md-12 gallery-item">
+                    <a href="#galleryModal1" class="gallery-link" data-toggle="modal">
+                        <div class="gallery-hover">
+                            <div class="gallery-hover-content">
+                                <i class="fa fa-expand fa-3x"></i>
+                            </div>
                         </div>
-                        <div class="col-lg-6 gallery-item">
-                            <a href="#galleryModal4" class="gallery-link" data-toggle="modal">
-                                <div class="gallery-hover">
-                                    <div class="gallery-hover-content">
-                                        <i class="fa fa-expand fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img src="img/gallery/4-preview.jpg" class="img-responsive" alt="Photo Galerie 4">
-                            </a>
+                        <img src="img/gallery/1-preview.jpg" class="img-responsive" alt="Cécile Chabert et Muriel Roger">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-12 gallery-item">
+                    <a href="#galleryModal4" class="gallery-link" data-toggle="modal">
+                        <div class="gallery-hover">
+                            <div class="gallery-hover-content">
+                                <i class="fa fa-expand fa-3x"></i>
+                            </div>
                         </div>
+                        <img src="img/gallery/4-preview.jpg" class="img-responsive" alt="Bernard Vignal et Emmanuel Megier">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="school">
+    <div class="hero">
+        <div class="overlay-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1></h1>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -386,7 +401,6 @@
     </div>
 </section>
 
-<!-- Contact Section -->
 <section id="contact">
     <div class="overlay-dark">
         <div class="container">
@@ -459,10 +473,6 @@
     </div>
 </footer>
 
-<!-- Portfolio Modals -->
-<!-- Use the modals below to showcase the image of the gallery in fullscreen -->
-
-<!-- Portfolio Modal 1 -->
 <div class="element-modal modal fade" id="galleryModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -506,7 +516,6 @@
     </div>
 </div>
 
-<!-- Portfolio Modal 2 -->
 <div class="element-modal modal fade" id="galleryModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -549,7 +558,6 @@
     </div>
 </div>
 
-<!-- Portfolio Modal 3 -->
 <div class="element-modal modal fade" id="galleryModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -593,7 +601,6 @@
     </div>
 </div>
 
-<!-- Portfolio Modal 4 -->
 <div class="element-modal modal fade" id="galleryModal4" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -637,7 +644,6 @@
     </div>
 </div>
 
-<!-- Portfolio Modal 5 -->
 <div class="element-modal modal fade" id="galleryModal5" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">

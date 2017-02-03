@@ -1,0 +1,6 @@
+User-Agent: *
+Disallow:
+Disallow: /php
+Disallow: /scss
+Disallow: /less
+Disallow: /audio
