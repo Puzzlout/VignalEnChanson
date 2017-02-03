@@ -92,9 +92,6 @@ $(window).load(function () {
         par
             .addClass('active')
             .siblings().removeClass('active');
-        par
-            .find("a span i").addClass("fa-pause").removeClass("fa-play")
-            .siblings().find("a span i").addClass("fa-play").removeClass("fa-pause");
         audio[0].load();
         audio[0].play();
     }
