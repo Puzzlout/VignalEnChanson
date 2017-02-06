@@ -845,6 +845,9 @@ section h2.section-subheading {
 #music .video-content {
     margin-bottom: 75px;
 }
+.video-content {
+    display: none;/*no used for now*/
+}
 #music .music-content {
     margin-bottom: 100px;
 }
@@ -926,15 +929,21 @@ section h2.section-subheading {
 }
 
 #playlist li.active {
-    background-color: #f2f2f2;
+    background: rgba(240,240,240,0.8);
+    color: #fff;
 }
 #playlist li:hover {
-    background-color: #efefef;
+    background: rgba(220,240,220,0.8);
+    color: #fff;
 }
 
 #playlist li a {
     display: inline-block;
     line-height: 60px;
+    color: #666;
+}
+#playlist li.active a,
+#playlist li:hover a {
     color: #666;
 }
 
