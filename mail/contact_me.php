@@ -38,10 +38,11 @@ if($captcha_check['success'] == false) {
     $mail->Password = 'bernard%2017';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
+    $mail->CharSet = 'UTF8';
 
     $mail->setLanguage('fr');
     $mail->setFrom('contact@bernardvignal.fr');
-    $mail->addAddress('contact@bernardvignal.fr');
+    $mail->addAddress('damirius@gmail.com');
     $mail->Subject = "Message envoyé depuis le site bernardvignal.fr par $name";
     $mail->Body = "Bonjour,<br/><br/>Vous avez reçu un nouveau message du site bernardvignal.fr.<br/><br/>" .
         "Voici les détails :<br/><br/>Nom: $name<br/><br/>Courrier électronique : $email_address<br/><br/>Téléphone : $phone<br/><br/>Message :<br/>$message";

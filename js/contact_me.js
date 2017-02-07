@@ -19,6 +19,7 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+			$("#contactForm button[type='submit']").prop('disabled',true); // disable submit button
             $.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
@@ -46,8 +47,10 @@ $(function() {
                         $('#success > .alert-danger').append("<strong>"+data.message+"</strong>");
                         $('#success > .alert-danger').append('</div>');
                     }
-                    //clear all fields
+                    //clear only captcha, leave other fields
                     grecaptcha.reset();
+					//enable submit button
+					$("#contactForm button[type='submit']").prop('disabled',false);
                 },
                 error: function() {
                     // Fail message
@@ -59,6 +62,8 @@ $(function() {
                     //clear all fields
                     $('#contactForm').trigger("reset");
                     grecaptcha.reset();
+					//enable submit button
+					$("#contactForm button[type='submit']").prop('disabled',false);
                 },
             });
         },
