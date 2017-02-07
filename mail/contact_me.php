@@ -42,7 +42,7 @@ if($captcha_check['success'] == false) {
 
     $mail->setLanguage('fr');
     $mail->setFrom('contact@bernardvignal.fr');
-    $mail->addAddress('damirius@gmail.com');
+    $mail->addAddress('contact@bernardvignal.fr');
     $mail->Subject = "Message envoyé depuis le site bernardvignal.fr par $name";
     $mail->Body = "Bonjour,<br/><br/>Vous avez reçu un nouveau message du site bernardvignal.fr.<br/><br/>" .
         "Voici les détails :<br/><br/>Nom: $name<br/><br/>Courrier électronique : $email_address<br/><br/>Téléphone : $phone<br/><br/>Message :<br/>$message";
