@@ -26,28 +26,30 @@ $captcha_check = json_decode(
     ), true);
 if($captcha_check['success'] == false) {
     $error = true;
-    $return_message = "reCaptcha isn't valid";
+    $return_message = "reCaptcha n'est pas valide.";
 } else {
     $mail->isSMTP();
+    $mail->isHTML(true);
     $mail->SMTPDebug = 0;
-    $mail->Host = 'mail.supremecluster.com';
+    $mail->Host = 'mail.ovh.net';
     $mail->SMTPAuth = true;
     $mail->AuthType = 'LOGIN';
-    $mail->Username = 'noreply@puzzlout.com';
-    $mail->Password = 'noreply%PUZZL0UT%2017';
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 2525;
+    $mail->Username = 'contact@bernardvignal.fr';
+    $mail->Password = 'bernard%2017';
+    //$mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
 
-    $mail->setFrom('noreply@puzzlout.com');
-    $mail->addAddress('noreply@puzzlout.com');
+    $mail->setLanguage('fr');
+    $mail->setFrom('contact@bernardvignal.fr');
+    $mail->addAddress('jeremie.litzler@gmail.com');
     $mail->Subject = "Message envoyé depuis le site bernardvignal.fr par $name";
     $mail->Body = "Bonjour,\n\nVous avez reçu un nouveau message du site bernardvignal.fr.\n\n" .
         "Voici les détails :\n\nNom: $name\n\nCourrier électronique : $email_address\n\nTéléphone : $phone\n\nMessage :\n$message";
     if(!$mail->send()) {
         $error = true;
-        $return_message = 'Message could not be sent.';
+        $return_message = "Le message n'a pas été envoyé.";
     } else {
-        $return_message = "Your message has been sent.";
+        $return_message = "Le message a été envoyé.";
     }
 
 }
