@@ -30,6 +30,7 @@
                                            data-validation-required-message="Veuillez saisir votre numéro de téléphone.">
                                     <p class="help-block text-danger"></p>
                                 </div>
+                                <div class="g-recaptcha" data-sitekey="6LdRWRMUAAAAANJmTvQOI0Z_KMJ130XZPHWZ351E"></div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
