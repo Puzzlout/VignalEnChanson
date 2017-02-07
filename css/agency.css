@@ -195,6 +195,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .hero {
+    background-size: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
