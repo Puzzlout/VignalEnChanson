@@ -1153,6 +1153,9 @@ section#contact .text-danger {
     border-radius: 4px;
 }
 
+section#contact .g-recaptcha {
+    margin-bottom: 20px;
+}
 /* SECTION : FOOTER */
 
 footer {

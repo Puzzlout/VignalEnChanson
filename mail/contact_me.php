@@ -1,62 +1,64 @@
 <?php
+include_once 'config.php';
 require 'phpmailer/PHPMailerAutoload.php';
 $mail = new PHPMailer;
 $return_message = '';
 $error = false;
 // Check for empty fields
-if (empty($_POST['name']) ||
-    empty($_POST['email']) ||
-    empty($_POST['phone']) ||
-    empty($_POST['message']) ||
+if (empty($_POST[REQUEST_NAME]) ||
+    empty($_POST[REQUEST_EMAIL]) ||
+    empty($_POST[REQUEST_PHONE]) ||
+    empty($_POST[REQUEST_MESSAGE]) ||
     !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)
 ) {
     $return_message = "No arguments Provided!";
     $error = true;
 }
 $captcha_response = $_POST['g-recaptcha-response'];
-$name = strip_tags(htmlspecialchars($_POST['name']));
-$email_address = strip_tags(htmlspecialchars($_POST['email']));
-$phone = strip_tags(htmlspecialchars($_POST['phone']));
-$message = strip_tags(htmlspecialchars($_POST['message']));
+$mail_content_vars = [
+    "[[".REQUEST_NAME."]]" => strip_tags(htmlspecialchars($_POST[REQUEST_NAME])),
+    "[[".REQUEST_EMAIL."]]" => strip_tags(htmlspecialchars($_POST[REQUEST_EMAIL])),
+    "[[".REQUEST_PHONE."]]" => strip_tags(htmlspecialchars($_POST[REQUEST_PHONE])),
+    "[[".REQUEST_MESSAGE."]]" => strip_tags(htmlspecialchars($_POST[REQUEST_MESSAGE]))
+];
 
-$secret = "6LdRWRMUAAAAANwL7tMT9qcexAVfFXRPpNje2F2n";
 $captcha_check = json_decode(
     file_get_contents(
-        "https://www.google.com/recaptcha/api/siteverify?secret=".$secret ."&response=" .$captcha_response."&remoteip=".$_SERVER['REMOTE_ADDR']
+        "https://www.google.com/recaptcha/api/siteverify?hl=fr&secret=" . $recaptcha_secret
+        . "&response=" . $captcha_response
+        . "&remoteip=" . $_SERVER['REMOTE_ADDR']
     ), true);
-if($captcha_check['success'] == false) {
+if ($captcha_check['success'] == false) {
     $error = true;
-    $return_message = "reCaptcha n'est pas valide.";
+    $return_message = $recaptcha_error_msg;
 } else {
     $mail->isSMTP();
     $mail->isHTML(true);
     $mail->SMTPDebug = 0;
-    $mail->Host = 'ssl0.ovh.net';
-    $mail->SMTPAuth = true;
-    $mail->AuthType = 'LOGIN';
-    $mail->Username = 'contact@bernardvignal.fr';
-    $mail->Password = 'bernard%2017';
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
-    $mail->CharSet = 'UTF8';
+    $mail->Host = $mail_host;
+    $mail->SMTPAuth = $mail_smtpauth;
+    $mail->AuthType = $mail_authtype;
+    $mail->Username = $mail_username;
+    $mail->Password = $mail_password;
+    $mail->SMTPSecure = $mail_smtpsecure;
+    $mail->Port = $mail_port;
+    $mail->CharSet = $mail_charset;
 
-    $mail->setLanguage('fr');
-    $mail->setFrom('contact@bernardvignal.fr');
-    $mail->addAddress('contact@bernardvignal.fr');
-    $mail->Subject = "Message envoyé depuis le site bernardvignal.fr par $name";
-    $mail->Body = "Bonjour,<br/><br/>Vous avez reçu un nouveau message du site bernardvignal.fr.<br/><br/>" .
-        "Voici les détails :<br/><br/>Nom: $name<br/><br/>Courrier électronique : $email_address<br/><br/>Téléphone : $phone<br/><br/>Message :<br/>$message";
-    $mail->AltBody = "Bonjour,\n\nVous avez reçu un nouveau message du site bernardvignal.fr.\n\n" .
-        "Voici les détails :\n\nNom: $name\n\nCourrier électronique : $email_address\n\nTéléphone : $phone\n\nMessage :\n$message";
-    if(!$mail->send()) {
+    $mail->setLanguage($mail_lang);
+    $mail->setFrom($mail_from);
+    $mail->addAddress($mail_to);
+    $mail->Subject = strtr($mail_subject, $mail_content_vars);
+    $mail->Body = strtr($mail_body, $mail_content_vars);
+    $mail->AltBody = strtr($mail_alt_body, $mail_content_vars);
+    if (!$mail->send()) {
         $error = true;
-        $return_message = "Le message n'a pas été envoyé.";
+        $return_message = $mail_error;
     } else {
-        $return_message = "Le message a été envoyé.";
+        $return_message = $mail_success;
     }
 
 }
 
 header('Content-Type: application/json; charset=UTF-8');
-echo json_encode(array('success'=>!$error, 'message' => $return_message));
+echo json_encode(array('success' => !$error, 'message' => $return_message));
 ?>
