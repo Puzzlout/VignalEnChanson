@@ -177,7 +177,6 @@ fieldset[disabled] .btn-xl.active {
     padding-left: 0;
     padding-right: 0;
 }
-
 .modal-body-no-pd {
     padding: 0;
 }
@@ -1069,13 +1068,49 @@ span.fa {
 
 /* SECTION: SCHOOL */
 
+#school {
+    padding: 0;
+}
+
 #school .hero {
     background-image: url('../img/kidpic-bg.jpg');
 }
 
-#school h2.section-subheading {
+section#school h1.section-heading {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+section#school h2.section-subheading {
     font-size: 30px;
     margin-bottom: 0;
+}
+section#school h2:last-child {
+    margin-bottom: 40px;
+}
+
+section#school p {
+    padding: 20px 0;
+}
+
+section#school a {
+    font-size: 4em;
+    color: #333333;
+}
+@media (max-width: 768px) {
+    #school .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    section#school h1.section-heading {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    section#school h2.section-subheading {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
 }
 
 /* SECTION: CONTACT */
@@ -1087,6 +1122,12 @@ section#contact {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0;
+}
+@media (max-width: 768px) {
+    section#contact .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
 
 
