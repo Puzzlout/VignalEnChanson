@@ -19,6 +19,7 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+			$("#contactForm button[type='submit']").prop('disabled',true); // disable submit button
             $.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
@@ -26,21 +27,30 @@ $(function() {
                     name: name,
                     phone: phone,
                     email: email,
-                    message: message
+                    message: message,
+                    'g-recaptcha-response': grecaptcha.getResponse(),
                 },
                 cache: false,
-                success: function() {
-                    // Success message
-                    $('#success').html("<div class='alert alert-success'>");
-                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                        .append("</button>");
-                    $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
-                    $('#success > .alert-success')
-                        .append('</div>');
-
-                    //clear all fields
-                    $('#contactForm').trigger("reset");
+                success: function(data) {
+                    if(data.success) {
+                        // Success message
+                        $('#success').html("<div class='alert alert-success'>");
+                        $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
+                        $('#success > .alert-success').append("<strong>"+data.message+"</strong>");
+                        $('#success > .alert-success').append('</div>');
+                        $('#contactForm').trigger("reset");
+                    } else {
+                        // Fail message
+                        $('#success').html("<div class='alert alert-danger'>");
+                        $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                            .append("</button>");
+                        $('#success > .alert-danger').append("<strong>"+data.message+"</strong>");
+                        $('#success > .alert-danger').append('</div>');
+                    }
+                    //clear only captcha, leave other fields
+                    grecaptcha.reset();
+					//enable submit button
+					$("#contactForm button[type='submit']").prop('disabled',false);
                 },
                 error: function() {
                     // Fail message
@@ -51,6 +61,9 @@ $(function() {
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
+                    grecaptcha.reset();
+					//enable submit button
+					$("#contactForm button[type='submit']").prop('disabled',false);
                 },
             });
         },
