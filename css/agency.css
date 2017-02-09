@@ -855,6 +855,7 @@ section h2.section-subheading {
     display: none;/*no used for now*/
 }
 #music .music-content {
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 
@@ -920,7 +921,6 @@ section h2.section-subheading {
 #playlist > ul > li > a {
     margin: 0 auto;
     min-width: 250px;
-    max-width: 996px;
 }
 
 .player audio {
@@ -1057,7 +1057,8 @@ span.fa {
 #music .gallery-item img,
 #gallery .gallery-item img,
 #team .gallery-item img {
-    width: 100%;
+    width: 300px;
+    margin: 0 auto;
 }
 
 #music *,
