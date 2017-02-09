@@ -318,24 +318,24 @@ header {
 }
 
 header .hero {
-    background-image: url("https://media-6af8.kxcdn.com/img/header-bg.jpg");
+    background-image: url("../img/header-bg.jpg");
 }
 
 @media (min-width: 992px) {
     header .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/header-bg.jpg");
+        background-image: url("../img/header-bg.jpg");
     }
 }
 
 @media (max-width: 992px) {
     header .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/header-bg-992w.jpg");
+        background-image: url("../img/header-bg-992w.jpg");
     }
 }
 
 @media (max-width: 768px) {
     header .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/header-bg-768w.jpg");
+        background-image: url("../img/header-bg-768w.jpg");
     }
 }
 
@@ -517,7 +517,7 @@ section h2.section-subheading {
 
 @media (min-width: 768px) and (max-width: 992px) {
     #team .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/team-bg-768w.jpg");
+        background-image: url("../img/team-bg-768w.jpg");
         background-size: contain;
     }
 
@@ -528,7 +528,7 @@ section h2.section-subheading {
 
 @media (min-width: 992px) {
     #team .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/team-bg.jpg");
+        background-image: url("../img/team-bg.jpg");
     }
 }
 
@@ -832,19 +832,19 @@ section h2.section-subheading {
 }
 @media (max-width: 768px) {
     #music .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/kidpic-bg-768w.jpg");
+        background-image: url("../img/kidpic-bg-768w.jpg");
         background-size: contain;
     }
 }
 
 @media (min-width: 768px) {
     #music .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/kidpic-bg-992w.jpg");
+        background-image: url("../img/kidpic-bg-992w.jpg");
     }
 }
 @media (min-width: 1200px) {
     #music .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/kidpic-bg.jpg");
+        background-image: url("../img/kidpic-bg.jpg");
     }
 }
 
@@ -1079,28 +1079,50 @@ span.fa {
 }
 
 #school .hero {
-    background-image: url('https://media-6af8.kxcdn.com/img/kidpic-bg.jpg');
+    background-image: url('../img/kidpic-bg.jpg');
 }
 
 section#school h1.section-heading {
-    margin-top: 40px;
-    margin-bottom: 100px;
+    margin-top: 35px;
+    margin-bottom: 50px;
 }
 section#school h2.section-subheading {
-    font-size: 30px;
-    margin-bottom: 0;
+    font-size: 26px;
 }
-section#school h2:last-child {
-    margin-bottom: 40px;
+section#school h1 span,
+section#school h2 span {
+    line-height: normal;
+    display: block;
 }
 
 section#school p {
     padding-top: 40px;
 }
 
-section#school a {
-    font-size: 4em;
+section#school a .fa,
+section#school .xp-link a,
+section#school .xp-link a .fa {
     color: #333333;
+    font-size: 20px;
+}
+section#school .xp-link:hover {
+    background: rgba(255,255,255,0.8);
+}
+section#school ul {
+    padding: 0;
+    -webkit-padding-start: 0;
+}
+section#school ul li {
+    list-style-type: none;
+}
+section#school ul li a {
+    line-height: 4em;
+    padding: 3em 0;
+}
+
+
+section#school a .fa {
+    font-size: 4em;
 }
 @media (max-width: 768px) {
     #school .row {
@@ -1116,14 +1138,28 @@ section#school a {
         font-size: 16px;
         margin-bottom: 0;
     }
+    section#school ul li a {
+        line-height: 2em;
+        padding: 1.75em 0;
+    }
+    section#school .xp-link a > i,
+    section#school .xp-link a > span {
+        display: block;
+    }
 
+
+}
+
+section#school h2.last {
+    margin-top: 75px;
+    margin-bottom: 10px;
 }
 
 /* SECTION: CONTACT */
 
 section#contact {
     background-color: #222222;
-    background-image: url('https://media-6af8.kxcdn.com/img/contact-bg.jpg');
+    background-image: url('../img/contact-bg.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
