@@ -1,4 +1,42 @@
 // Agency Theme JavaScript
+function createCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toGMTString();
+    }
+
+    document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
+};
+
+function readCookie(name) {
+    var nameEQ = encodeURIComponent(name) + "=";
+    var ca = document.cookie.split(";");
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === " ") c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) === 0) {
+            return decodeURIComponent(c.substring(nameEQ.length, c.length));
+        }
+    }
+    return null;
+}
+
+function deleteCookie(name) {
+    this.createCookie(name, "", -1);
+}
+
+function showCookieConsent() {
+    var usrCc = readCookie("usr_cc");
+    if (!usrCc) {
+        $(".cookie-consent").slideDown("slow");
+    }
+}
+
+/*function cookieTest() {
+ console.log('Testing terms set');
+ }*/
 
 (function ($) {
     "use strict"; // Start of use strict
@@ -49,6 +87,19 @@
         $("#galleryModal" + current_slide).hide();
         $("#galleryModal" + slide).show();
 
+    });
+
+    showCookieConsent();
+
+    $(".cc-btn").click(function () {
+        var ccVal;
+        if ($(this).hasClass("cc-btn-positive")) {
+            ccVal = "1";
+        } else {
+            ccVal = "0";
+        }
+        createCookie("usr_cc", ccVal, 4745);
+        $(".cookie-consent").slideUp("fast");
     });
 
 })(jQuery); // End of use strict
