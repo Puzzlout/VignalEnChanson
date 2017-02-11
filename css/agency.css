@@ -1169,6 +1169,11 @@ section#contact {
     background-repeat: no-repeat;
     padding: 0;
 }
+@media (max-width: 9992px) {
+    section#contact {
+        background-image: url("../img/contact-bg-768w.jpg");
+    }
+}
 @media (max-width: 768px) {
     section#contact .row {
         margin-right: 0;
