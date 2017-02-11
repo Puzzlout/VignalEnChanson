@@ -127,7 +127,7 @@ $(window).load(function () {
         });
         audio[0].addEventListener('ended', function (e) {
             current++;
-            if (current == len) {
+            if (current > len) {
                 current = 0;
                 link = playlist.find('a')[0];
             } else {
