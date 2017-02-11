@@ -318,24 +318,24 @@ header {
 }
 
 header .hero {
-    background-image: url("https://media-6af8.kxcdn.com/img/header-bg.jpg");
+    background-image: url("../img/header-bg.jpg");
 }
 
 @media (min-width: 992px) {
     header .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/header-bg.jpg");
+        background-image: url("../img/header-bg.jpg");
     }
 }
 
 @media (max-width: 992px) {
     header .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/header-bg-992w.jpg");
+        background-image: url("../img/header-bg-992w.jpg");
     }
 }
 
 @media (max-width: 768px) {
     header .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/header-bg-768w.jpg");
+        background-image: url("../img/header-bg-768w.jpg");
     }
 }
 
@@ -406,7 +406,7 @@ header .intro-next .intro-song .fa {
 
 @media (max-width: 768px) {
     header .intro-next {
-        bottom: -12vh;
+        bottom: -4vh;
     }
 }
 
@@ -517,7 +517,7 @@ section h2.section-subheading {
 
 @media (min-width: 768px) and (max-width: 992px) {
     #team .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/team-bg-768w.jpg");
+        background-image: url("../img/team-bg-768w.jpg");
         background-size: contain;
     }
 
@@ -528,7 +528,7 @@ section h2.section-subheading {
 
 @media (min-width: 992px) {
     #team .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/team-bg.jpg");
+        background-image: url("../img/team-bg.jpg");
     }
 }
 
@@ -832,19 +832,19 @@ section h2.section-subheading {
 }
 @media (max-width: 768px) {
     #music .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/kidpic-bg-768w.jpg");
+        background-image: url("../img/kidpic-bg-768w.jpg");
         background-size: contain;
     }
 }
 
 @media (min-width: 768px) {
     #music .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/kidpic-bg-992w.jpg");
+        background-image: url("../img/kidpic-bg-992w.jpg");
     }
 }
 @media (min-width: 1200px) {
     #music .hero {
-        background-image: url("https://media-6af8.kxcdn.com/img/kidpic-bg.jpg");
+        background-image: url("../img/kidpic-bg.jpg");
     }
 }
 
@@ -1083,7 +1083,7 @@ img.fullwidth {
 }
 
 #school .hero {
-    background-image: url('https://media-6af8.kxcdn.com/img/kidpic-bg.jpg');
+    background-image: url('../img/kidpic-bg.jpg');
 }
 
 section#school h1.section-heading {
@@ -1163,7 +1163,7 @@ section#school h2.last {
 
 section#contact {
     background-color: #222222;
-    background-image: url('https://media-6af8.kxcdn.com/img/contact-bg.jpg');
+    background-image: url('../img/contact-bg.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1270,7 +1270,7 @@ footer ul.quicklinks {
 footer ul.quicklinks a {
     color: steelblue;
 }
-footer ul.quicklinks a:h {
+footer ul.quicklinks a:hover {
     text-decoration: underline;
 }
 ul.social-buttons {
@@ -1470,24 +1470,24 @@ ul.social-buttons li a:active {
     display: none;
     min-height: 50px;
     padding: 4px 2px;
-    position: fixed;
-    left: 50%;
-    bottom: 0;
     text-align: center;
+    position: fixed;
     bottom: 0;
-    width: 50%;
+    width: 100%;
     z-index: 999999;
-    background-color: #fff;;
+    background: rgba(255,255,255,0.9);
     border-top: 1px solid #aaa;
 }
 .cookie-consent > p {
     font-size: smaller;
-    margin-bottom: 4px;
+    margin: 0 20px 0 0;
+    padding: 2px;
+    line-height: 1.25em;
 }
 .cc-button-wrapper {
-    display: inline-block;
-    margin: 0 15px;
-    width: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .cc-btn {
     font-size: smaller;
@@ -1498,7 +1498,9 @@ ul.social-buttons li a:active {
     display: inline-block;
     cursor: pointer;
 }
-
+.cookie-consent-terms a {
+    color: steelblue;
+}
 ::-moz-selection {
     text-shadow: none;
     background: #fdfdfd;
