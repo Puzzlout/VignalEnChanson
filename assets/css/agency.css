@@ -321,12 +321,6 @@ header .hero {
     background-image: url("../img/header-bg.jpg");
 }
 
-@media (min-width: 992px) {
-    header .hero {
-        background-image: url("../img/header-bg.jpg");
-    }
-}
-
 @media (max-width: 992px) {
     header .hero {
         background-image: url("../img/header-bg-992w.jpg");
@@ -336,6 +330,11 @@ header .hero {
 @media (max-width: 768px) {
     header .hero {
         background-image: url("../img/header-bg-768w.jpg");
+    }
+}
+@media (max-width: 480px) {
+    header .hero {
+        background-image: url("../img/header-bg-480w.jpg");
     }
 }
 
@@ -465,11 +464,11 @@ section .container {
     }
 }
 
-section h1.section-heading {
+section h2.section-heading {
     padding: 40px 0;
 }
 
-section h2.section-subheading {
+section h3.section-subheading {
     font-size: 16px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: none;
@@ -496,7 +495,7 @@ section h2.section-subheading {
     #team-member-bubbles {
         display: none;
     }
-    #team-medals h1.section-heading {
+    #team-medals h2.section-heading {
         background-color: #000;
         color: #fff;
         margin: 0;
@@ -793,7 +792,7 @@ section h2.section-subheading {
     padding: 0 20px;
 }
 
-#team .team-catchphrase h1 {
+#team .team-catchphrase h2 {
     font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
     color: #FFFFFF;
     text-shadow: 1px 1px #666;
@@ -824,28 +823,36 @@ section h2.section-subheading {
 
 .team-member p {
     margin-top: 0;
+    font-size: 20px;
 }
 
-/*SECTION: MUSIC*/
+.team-member-1 img {
+    border: 7px solid #279034;
+}
+.team-member-1 p {
+    color: #279034;
+}
+.team-member-2 img {
+    border: 7px solid #4a90e2;
+}
+.team-member-2 p {
+    color: #4a90e2;
+}
+.team-member-3 img {
+    border: 7px solid #ffb319;
+}
+.team-member-3 p {
+    color: #ffb319;
+}
+.team-member-4 img {
+    border: 7px solid #ff5810;
+}
+.team-member-4 p {
+    color: #ff5810;
+}
+/********************** SECTION: MUSIC ************************/
 #music {
     padding: 0;
-}
-@media (max-width: 768px) {
-    #music .hero {
-        background-image: url("../img/kidpic-bg-768w.jpg");
-        background-size: contain;
-    }
-}
-
-@media (min-width: 768px) {
-    #music .hero {
-        background-image: url("../img/kidpic-bg-992w.jpg");
-    }
-}
-@media (min-width: 1200px) {
-    #music .hero {
-        background-image: url("../img/kidpic-bg.jpg");
-    }
 }
 
 #music .video-content {
@@ -1086,15 +1093,30 @@ img.fullwidth {
     background-image: url('../img/kidpic-bg.jpg');
 }
 
-section#school h1.section-heading {
-    margin-top: 35px;
-    margin-bottom: 50px;
+@media (min-width: 768px) {
+    #school .hero {
+        background-image: url("../img/kidpic-bg-992w.jpg");
+    }
 }
-section#school h2.section-subheading {
+
+@media (max-width: 768px) {
+    #school .hero {
+        background-image: url("../img/kidpic-bg-768w.jpg");
+    }
+}
+@media (max-width: 480px) {
+    #school .hero {
+        background-image: url("../img/kidpic-bg-480w.jpg");
+    }
+}
+section#school h2.section-heading {
+    margin-top: 35px;
+}
+section#school h3.section-subheading {
     font-size: 26px;
 }
-section#school h1 span,
-section#school h2 span {
+section#school h2 span,
+section#school h3 span {
     line-height: normal;
     display: block;
 }
@@ -1133,12 +1155,12 @@ section#school a .fa {
         margin-right: 0;
         margin-left: 0;
     }
-    section#school h1.section-heading {
+    section#school h2.section-heading {
         margin-top: 10px;
         margin-bottom: 20px;
         font-size: 24px;
     }
-    section#school h2.section-subheading {
+    section#school h3.section-subheading {
         font-size: 16px;
         margin-bottom: 0;
     }
@@ -1154,7 +1176,7 @@ section#school a .fa {
 
 }
 
-section#school h2.last {
+section#school h3.last {
     margin-top: 75px;
     margin-bottom: 10px;
 }
@@ -1171,7 +1193,7 @@ section#contact {
 }
 @media (max-width: 9992px) {
     section#contact {
-        background-image: url("../img/contact-bg-768w.jpg");
+        background-image: url("../img/contact-bg-480w.jpg");
     }
 }
 @media (max-width: 768px) {
@@ -1183,7 +1205,6 @@ section#contact {
 
 
 section#contact .section-heading {
-    color: white;
 }
 
 section#contact .form-group {
@@ -1193,7 +1214,7 @@ section#contact .form-group {
 section#contact .form-group input,
 section#contact .form-group textarea {
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.75);
 }
 
 section#contact .form-group input.form-control {
@@ -1448,7 +1469,6 @@ ul.social-buttons li a:active {
 }
 
 .team-member-modal-body p {
-    font-size: 24px;
     line-height: 1.25em;
     margin-top: 30px;
     margin-bottom: 0;
