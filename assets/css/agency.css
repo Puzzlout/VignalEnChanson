@@ -1175,6 +1175,27 @@ section#school .xp-link:hover {
     background: rgba(255, 255, 255, 0.8);
 }
 
+section#school .xp-gallery p {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    section#school .xp-gallery .gallery-item img {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 768px) {
+    section#school .xp-gallery .gallery-item img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+section#school .gallery-hover {
+    height: 90%;
+}
+
 section#school ul {
     padding: 0;
     -webkit-padding-start: 0;
