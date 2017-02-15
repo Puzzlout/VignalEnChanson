@@ -53,7 +53,6 @@ h6 {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-
 .img-centered {
     margin: 0 auto;
 }
@@ -69,6 +68,7 @@ h6 {
 .overlay-dark {
     background: rgba(12, 12, 12, 0.5);
 }
+
 .overlay-light {
     background: rgba(255, 255, 255, 0.5);
 }
@@ -178,6 +178,7 @@ fieldset[disabled] .btn-xl.active {
     padding-left: 0;
     padding-right: 0;
 }
+
 .modal-body-no-pd {
     padding: 0;
 }
@@ -318,23 +319,24 @@ header {
 }
 
 header .hero {
-    background-image: url("../img/header-bg.jpg");
+    background-image: url("https://media-6af8.kxcdn.com/assets/img/header-bg.jpg");
 }
 
 @media (max-width: 992px) {
     header .hero {
-        background-image: url("../img/header-bg-992w.jpg");
+        background-image: url("https://media-6af8.kxcdn.com/assets/img/header-bg-992w.jpg");
     }
 }
 
 @media (max-width: 768px) {
     header .hero {
-        background-image: url("../img/header-bg-768w.jpg");
+        background-image: url("https://media-6af8.kxcdn.com/assets/img/header-bg-768w.jpg");
     }
 }
+
 @media (max-width: 480px) {
     header .hero {
-        background-image: url("../img/header-bg-480w.jpg");
+        background-image: url("https://media-6af8.kxcdn.com/assets/img/header-bg-480w.jpg");
     }
 }
 
@@ -355,7 +357,9 @@ header .intro-text .intro-lead-in {
 
 @media (max-width: 768px) {
     header .intro-text {
-        padding-top: 10px;
+        padding-top: 0;
+        position: absolute;
+        top: -20px;
     }
 
     header .hero {
@@ -477,7 +481,6 @@ section h3.section-subheading {
     margin-bottom: 75px;
 }
 
-
 /*SECTION : TEAM*/
 #team {
     padding: 0;
@@ -495,6 +498,7 @@ section h3.section-subheading {
     #team-member-bubbles {
         display: none;
     }
+
     #team-medals h2.section-heading {
         background-color: #000;
         color: #fff;
@@ -516,7 +520,7 @@ section h3.section-subheading {
 
 @media (min-width: 768px) and (max-width: 992px) {
     #team .hero {
-        background-image: url("../img/team-bg-768w.jpg");
+        background-image: url("https://media-6af8.kxcdn.com/assets/img/team-bg-768w.jpg");
         background-size: contain;
     }
 
@@ -527,7 +531,7 @@ section h3.section-subheading {
 
 @media (min-width: 992px) {
     #team .hero {
-        background-image: url("../img/team-bg.jpg");
+        background-image: url("https://media-6af8.kxcdn.com/assets/img/team-bg.jpg");
     }
 }
 
@@ -546,15 +550,29 @@ section h3.section-subheading {
     position: absolute;
 }
 
-.team-member-bubble .fa:hover {
+
+.team-member-bubble .fa-stack {
+    font-size: 4em;
+}
+.team-member-bubble .fa-commenting {
+    color: #fff;
+}
+.team-member-bubble .fa-commenting::before {
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.5);
+	background: rgba(255,255,255,0.5);
 }
 
-.team-member-bubble .fa {
-    color: #fff;
-    font-size: 4em;
-
+.team-member-outerLeft .fa-commenting-o {
+    color: rgba(255, 122, 0, 1);
+}
+.team-member-innerLeft .fa-commenting-o {
+    color: rgba(255, 179, 25, 1);
+}
+.team-member-innerRight .fa-commenting-o {
+    color: rgba(39, 144, 52, 1);
+}
+.team-member-outerRight .fa-commenting-o {
+    color: rgba(74, 144, 226, 1);
 }
 
 .team-member-outerLeft {
@@ -582,201 +600,201 @@ section h3.section-subheading {
 
 @media (min-width: 768px) and (max-width: 800px) {
     .team-member-outerLeft {
-        top: 190px;
-        left: 15px;
+        top: 170px;
+        left: 5px;
     }
 
     .team-member-innerLeft {
-        top: 110px;
-        left: 300px;
+        top: 90px;
+        left: 280px;
     }
 
     .team-member-innerRight {
-        top: 110px;
-        left: 475px;
+        top: 90px;
+        left: 455px;
     }
 
     .team-member-outerRight {
-        top: 170px;
-        left: 575px;
+        top: 150px;
+        left: 540px;
     }
 }
 
 @media (min-width: 800px) and (max-width: 850px) {
     .team-member-outerLeft {
-        top: 190px;
-        left: 35px;
+        top: 180px;
+        left: 15px;
     }
 
     .team-member-innerLeft {
-        top: 125px;
-        left: 320px;
+        top: 100px;
+        left: 300px;
     }
 
     .team-member-innerRight {
-        top: 110px;
-        left: 500px;
+        top: 100px;
+        left: 480px;
     }
 
     .team-member-outerRight {
-        top: 190px;
-        left: 600px;
+        top: 170px;
+        left: 580px;
     }
 }
 
 @media (min-width: 850px) and (max-width: 900px) {
     .team-member-outerLeft {
         top: 190px;
-        left: 35px;
+        left: 20px;
     }
 
     .team-member-innerLeft {
-        top: 125px;
-        left: 320px;
+        top: 105px;
+        left: 300px;
     }
 
     .team-member-innerRight {
-        top: 110px;
-        left: 540px;
+        top: 90px;
+        left: 520px;
     }
 
     .team-member-outerRight {
-        top: 190px;
-        left: 640px;
+        top: 180px;
+        left: 610px;
     }
 }
 
 @media (min-width: 900px) and (max-width: 992px) {
     .team-member-outerLeft {
         top: 190px;
-        left: 35px;
+        left: 25px;
     }
 
     .team-member-innerLeft {
-        top: 125px;
-        left: 350px;
+        top: 115px;
+        left: 320px;
     }
 
     .team-member-innerRight {
-        top: 110px;
-        left: 575px;
+        top: 100px;
+        left: 545px;
     }
 
     .team-member-outerRight {
-        top: 190px;
-        left: 690px;
+        top: 180px;
+        left: 650px;
     }
 }
 
 @media (min-width: 992px) {
     .team-member-outerLeft {
-        top: 190px;
-        left: 125px;
+        top: 180px;
+        left: 100px;
     }
 
     .team-member-innerLeft {
-        top: 125px;
-        left: 410px;
+        top: 95px;
+        left: 380px;
     }
 
     .team-member-innerRight {
-        top: 110px;
-        left: 600px;
+        top: 90px;
+        left: 570px;
     }
 
     .team-member-outerRight {
-        top: 175px;
-        left: 690px;
+        top: 165px;
+        left: 670px;
     }
 }
 
 @media (min-width: 1200px) {
     .team-member-outerLeft {
-        top: 32%;
+        top: 22%;
         left: 10%;
     }
 
     .team-member-innerLeft {
-        top: 17%;
-        left: 34%;
+        top: 12%;
+        left: 31%;
     }
 
     .team-member-innerRight {
-        top: 14%;
-        left: 51%;
+        top: 12%;
+        left: 48%;
     }
 
     .team-member-outerRight {
-        top: 25%;
-        left: 58%;
+        top: 22%;
+        left: 55%;
     }
 
 }
 
 @media (min-width: 1300px) {
     .team-member-outerLeft {
-        top: 27%;
-        left: 11%;
+        top: 25%;
+        left: 8%;
     }
 
     .team-member-innerLeft {
-        top: 18%;
-        left: 34%;
+        top: 15%;
+        left: 32%;
     }
 
     .team-member-innerRight {
-        top: 17%;
-        left: 50%;
+        top: 15%;
+        left: 48%;
     }
 
     .team-member-outerRight {
-        top: 26%;
-        left: 59%;
+        top: 25%;
+        left: 55%;
     }
 
 }
 
 @media (min-width: 1400px) {
     .team-member-outerLeft {
-        top: 30%;
-        left: 12%;
+        top: 28%;
+        left: 9%;
     }
 
     .team-member-innerLeft {
-        top: 20%;
-        left: 34%;
+        top: 17%;
+        left: 31%;
     }
 
     .team-member-innerRight {
-        top: 19%;
-        left: 50%;
+        top: 15%;
+        left: 49%;
     }
 
     .team-member-outerRight {
-        top: 30%;
-        left: 59%;
+        top: 27%;
+        left: 56%;
     }
 }
 
 @media (min-width: 1500px) {
     .team-member-outerLeft {
-        top: 32%;
-        left: 12%;
+        top: 31%;
+        left: 10%;
     }
 
     .team-member-innerLeft {
-        top: 22%;
-        left: 34%;
+        top: 21%;
+        left: 32%;
     }
 
     .team-member-innerRight {
-        top: 21%;
-        left: 50%;
+        top: 20%;
+        left: 48%;
     }
 
     .team-member-outerRight {
         top: 35%;
-        left: 59%;
+        left: 57%;
     }
 }
 
@@ -829,27 +847,35 @@ section h3.section-subheading {
 .team-member-1 img {
     border: 7px solid #279034;
 }
+
 .team-member-1 p {
     color: #279034;
 }
+
 .team-member-2 img {
     border: 7px solid #4a90e2;
 }
+
 .team-member-2 p {
     color: #4a90e2;
 }
+
 .team-member-3 img {
     border: 7px solid #ffb319;
 }
+
 .team-member-3 p {
     color: #ffb319;
 }
+
 .team-member-4 img {
     border: 7px solid #ff5810;
 }
+
 .team-member-4 p {
     color: #ff5810;
 }
+
 /********************** SECTION: MUSIC ************************/
 #music {
     padding: 0;
@@ -858,18 +884,21 @@ section h3.section-subheading {
 #music .video-content {
     margin-bottom: 75px;
 }
+
 .video-content {
-    display: none;/*no used for now*/
+    display: none; /*no used for now*/
 }
+
 #music .music-content {
     margin-top: 50px;
     margin-bottom: 100px;
 }
 
 @media (max-width: 992px) {
-    #music .video-content{
+    #music .video-content {
         margin-bottom: 50px;
     }
+
     #music .music-content {
         margin-bottom: 75px;
     }
@@ -879,6 +908,7 @@ section h3.section-subheading {
     display: inline-block;
     width: 100%;
 }
+
 #music .video-content a,
 #music .video-content .fa {
     color: #333;
@@ -888,6 +918,7 @@ section h3.section-subheading {
     text-align: center;
     vertical-align: middle;
 }
+
 #music .video-content p {
     font-size: 1em;
 }
@@ -916,6 +947,7 @@ section h3.section-subheading {
     padding-bottom: 20px;
     margin-bottom: 12px;
 }
+
 .player .audio-wrapper {
     text-align: center;
     border-top: 1px solid #666;
@@ -942,11 +974,12 @@ section h3.section-subheading {
 }
 
 #playlist li.active {
-    background: rgba(240,240,240,0.8);
+    background: rgba(240, 240, 240, 0.8);
     color: #fff;
 }
+
 #playlist li:hover {
-    background: rgba(220,240,220,0.8);
+    background: rgba(220, 240, 220, 0.8);
     color: #fff;
 }
 
@@ -955,6 +988,7 @@ section h3.section-subheading {
     line-height: 60px;
     color: #666;
 }
+
 #playlist li.active a,
 #playlist li:hover a {
     color: #666;
@@ -1067,6 +1101,7 @@ span.fa {
     width: 300px;
     margin: 0 auto;
 }
+
 img.fullwidth {
     width: 100% !important;
 }
@@ -1090,31 +1125,35 @@ img.fullwidth {
 }
 
 #school .hero {
-    background-image: url('../img/kidpic-bg.jpg');
+    background-image: url('https://media-6af8.kxcdn.com/assets/img/kidpic-bg.jpg');
 }
 
 @media (min-width: 768px) {
     #school .hero {
-        background-image: url("../img/kidpic-bg-992w.jpg");
+        background-image: url("https://media-6af8.kxcdn.com/assets/img/kidpic-bg-992w.jpg");
     }
 }
 
 @media (max-width: 768px) {
     #school .hero {
-        background-image: url("../img/kidpic-bg-768w.jpg");
+        background-image: url("https://media-6af8.kxcdn.com/assets/img/kidpic-bg-768w.jpg");
     }
 }
+
 @media (max-width: 480px) {
     #school .hero {
-        background-image: url("../img/kidpic-bg-480w.jpg");
+        background-image: url("https://media-6af8.kxcdn.com/assets/img/kidpic-bg-480w.jpg");
     }
 }
+
 section#school h2.section-heading {
     margin-top: 35px;
 }
+
 section#school h3.section-subheading {
     font-size: 26px;
 }
+
 section#school h2 span,
 section#school h3 span {
     line-height: normal;
@@ -1131,48 +1170,55 @@ section#school .xp-link a .fa {
     color: #333333;
     font-size: 20px;
 }
+
 section#school .xp-link:hover {
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
 }
+
 section#school ul {
     padding: 0;
     -webkit-padding-start: 0;
 }
+
 section#school ul li {
     list-style-type: none;
 }
+
 section#school ul li a {
     line-height: 4em;
     padding: 3em 0;
 }
 
-
 section#school a .fa {
     font-size: 4em;
 }
+
 @media (max-width: 768px) {
     #school .row {
         margin-right: 0;
         margin-left: 0;
     }
+
     section#school h2.section-heading {
         margin-top: 10px;
         margin-bottom: 20px;
         font-size: 24px;
     }
+
     section#school h3.section-subheading {
         font-size: 16px;
         margin-bottom: 0;
     }
+
     section#school ul li a {
         line-height: 2em;
         padding: 1.75em 0;
     }
+
     section#school .xp-link a > i,
     section#school .xp-link a > span {
         display: block;
     }
-
 
 }
 
@@ -1184,18 +1230,20 @@ section#school h3.last {
 /* SECTION: CONTACT */
 
 section#contact {
-    background-color: #222222;
-    background-image: url('../img/contact-bg.jpg');
+    background-color: #0d99dc;
+    background-image: url('https://media-6af8.kxcdn.com/assets/img/contact-bg.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0;
 }
+
 @media (max-width: 9992px) {
     section#contact {
-        background-image: url("../img/contact-bg-480w.jpg");
+        background-image: url("https://media-6af8.kxcdn.com/assets/img/contact-bg-480w.jpg");
     }
 }
+
 @media (max-width: 768px) {
     section#contact .row {
         margin-right: 0;
@@ -1203,10 +1251,21 @@ section#contact {
     }
 }
 
-
 section#contact .section-heading {
 }
 
+section#contact h2 {
+    color: #666;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    section#contact #contactForm > div div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 section#contact .form-group {
     margin-bottom: 25px;
 }
@@ -1269,6 +1328,7 @@ section#contact .text-danger {
 section#contact .g-recaptcha {
     margin-bottom: 20px;
 }
+
 /* SECTION : FOOTER */
 
 footer {
@@ -1281,9 +1341,11 @@ footer p.credits {
     line-height: 40px;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 footer p a {
     color: steelblue;
 }
+
 footer p a:hover {
     text-decoration: underline;
 }
@@ -1293,12 +1355,15 @@ footer ul.quicklinks {
     line-height: 40px;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 footer ul.quicklinks a {
     color: steelblue;
 }
+
 footer ul.quicklinks a:hover {
     text-decoration: underline;
 }
+
 ul.social-buttons {
     margin-bottom: 0;
 }
@@ -1478,13 +1543,16 @@ ul.social-buttons li a:active {
 #legalTerms a {
     color: steelblue;
 }
+
 #legalTerms a:hover {
     text-decoration: underline;
 }
+
 #legalTerms .close-modal .lr,
 #legalTerms .close-modal .rl {
     background-color: #333;
 }
+
 #legalTerms h2,
 #legalTerms p {
     text-align: justify;
@@ -1500,20 +1568,23 @@ ul.social-buttons li a:active {
     bottom: 0;
     width: 100%;
     z-index: 999999;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     border-top: 1px solid #aaa;
 }
+
 .cookie-consent > p {
     font-size: smaller;
     margin: 0 20px 0 0;
     padding: 2px;
     line-height: 1.25em;
 }
+
 .cc-button-wrapper {
     position: absolute;
     right: 0;
     top: 0;
 }
+
 .cc-btn {
     font-size: smaller;
     padding: 2px 4px;
@@ -1523,9 +1594,11 @@ ul.social-buttons li a:active {
     display: inline-block;
     cursor: pointer;
 }
+
 .cookie-consent-terms a {
     color: steelblue;
 }
+
 ::-moz-selection {
     text-shadow: none;
     background: #fdfdfd;
@@ -1558,4 +1631,3 @@ body {
     color: #fff;
     padding: 10px;
 }
-
