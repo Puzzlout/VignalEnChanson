@@ -559,7 +559,6 @@ section h3.section-subheading {
 }
 .team-member-bubble .fa-commenting::before {
     cursor: pointer;
-	background: rgba(255,255,255,0.5);
 }
 
 .team-member-outerLeft .fa-commenting-o {
