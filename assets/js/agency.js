@@ -133,7 +133,7 @@ $(window).load(function () {
             } else {
                 link = playlist.find('a')[current];
             }
-            run($(link), audio[0]);
+            //run($(link), audio[0]);//see issue #77
         });
     }
 
