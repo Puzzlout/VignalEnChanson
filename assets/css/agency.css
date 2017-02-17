@@ -561,7 +561,8 @@ section h3.section-subheading {
     cursor: pointer;
 }
 
-.team-member-outerLeft .fa-commenting-o {
+.team-member-outerLeft .fa-circle {
+    font-size: 0.75em;
     color: rgba(255, 122, 0, 1);
 }
 .team-member-innerLeft .fa-commenting-o {
