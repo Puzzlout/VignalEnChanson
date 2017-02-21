@@ -7,18 +7,18 @@ define("REQUEST_MESSAGE", "message");
 $recaptcha_secret = "6LdRWRMUAAAAANwL7tMT9qcexAVfFXRPpNje2F2n";
 $recaptcha_error_msg = "Le reCaptcha n'est pas valide.";
 
-$mail_host = 'ssl0.ovh.net';
+$mail_host = '****';
 $mail_smtpauth = true;
 $mail_authtype = 'LOGIN';
-$mail_username = 'contact@bernardvignal.fr';
-$mail_password = 'bernard%2017';
+$mail_username = '****';
+$mail_password = '****';
 $mail_smtpsecure = 'tls';
 $mail_port = 587;
 $mail_charset = 'UTF8';
 $mail_lang = "fr";
 
-$mail_from = 'contact@bernardvignal.fr';
-$mail_to = 'contact@bernardvignal.fr';
+$mail_from = 'from';
+$mail_to = 'to';
 
 $mail_subject = "Message envoyé depuis le site bernardvignal.fr par [[name]]";
 $mail_body =
