@@ -4,7 +4,7 @@ define("REQUEST_EMAIL", "email");
 define("REQUEST_PHONE", "phone");
 define("REQUEST_MESSAGE", "message");
 
-$recaptcha_secret = "6LdRWRMUAAAAANwL7tMT9qcexAVfFXRPpNje2F2n";
+$recaptcha_secret = "****";
 $recaptcha_error_msg = "Le reCaptcha n'est pas valide.";
 
 $mail_host = '****';
