@@ -19,16 +19,16 @@
     <meta name="copyright" content="Bernard Vignal, tous droits réservés © 2016"/>
     <meta name="robots" content="index, follow"/>
 
-    <meta property="og:title" content="The title" />
-    <meta property="og:type" content="The type" />
-    <meta property="og:url" content="http://url.com/" />
-    <meta property="og:image" content="http://image.jpg" />
+    <meta property="og:title" content="Bernard Vignal, auteur-compositeur de chansons françaises" />
+    <meta property="og:type" content="music.song" />
+    <meta property="og:url" content="https://bernardvignal.fr/" />
+    <meta property="og:image" content="assets/img/header-bg.jpg" />
     
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Droid+Serif:400,700,400italic,700italic|Dancing+Script:400,700|Roboto+Slab:400,100,300,700"
           rel="stylesheet" type="text/css">
-    <link href="assets/css/agency.min.v102.css" rel="stylesheet">
+    <link href="assets/css/agency.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -424,7 +424,7 @@
                         <div class="col-xs-12">
                             <h2 class="section-heading">
                                 <span>Nous vous proposons des ateliers</span>
-                                <span>de sensibilisation aux chansons du spectable.</span>
+                                <span>de sensibilisation aux chansons du spectacle.</span>
                             </h2>
                             <p class="lead">
                                 <span><i>Les ateliers seront menés par un membre du groupe,</i></span>
@@ -438,39 +438,12 @@
                         <div class="col-xs-12">
                             <h2 class="section-heading">Nos expériences passées</h2>
                             <ul id="experiences">
-                                <li class="xp-gallery">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <p class="lead">
-                                                Venue à Varennes-les-Mâcon : Bernard et son équipes font le show !
-                                            </p>
-                                        </div>
-                                        <div class="col-sm-6 gallery-item">
-                                            <a href="#galleryModal6" class="gallery-link" data-toggle="modal">
-                                                <div class="gallery-hover">
-                                                    <div class="gallery-hover-content">
-                                                        <i class="fa fa-expand fa-3x"></i>
-                                                    </div>
-                                                </div>
-                                                <img data-src="assets/img/gallery/6-preview.jpg"
-                                                     class="lazyload img-responsive"
-                                                     alt="Allez, tout le monde lève les bras ! A droite ! A gauche !">
-                                            </a>
-                                        </div>
-                                        <div class="col-sm-6 gallery-item">
-                                            <a href="#galleryModal7" class="gallery-link" data-toggle="modal">
-                                                <div class="gallery-hover">
-                                                    <div class="gallery-hover-content">
-                                                        <i class="fa fa-expand fa-3x"></i>
-                                                    </div>
-                                                </div>
-                                                <img data-src="assets/img/gallery/7-preview.jpg"
-                                                     class="lazyload img-responsive"
-                                                     alt="Les enfants chantent avec Muriel pendant que Bernard et Emmanuel jouent.">
-                                            </a>
-                                        </div>
-
-                                    </div>
+                                <li class="xp-link">
+                                    <a href="#experienceModal1" data-toggle="modal"
+                                       title="Concert Bernard Vignal à Varennes-les-Mâcon">
+                                        <i class="fa fa-external-link fa-4x"></i>
+                                        <span>Concert Bernard Vignal à Varennes-les-Mâcon</span>
+                                    </a>
                                 </li>
                                 <li class="xp-link">
                                     <a href="http://lewebpedagogique.com/eeflevieu/2016/12/16/spectacle-musical-le-6-janvier-2017-au-foyer-rural/"
@@ -506,7 +479,7 @@
 </section>
 
 <section id="contact">
-    <div class="overlay">
+    <div class="overlay-x-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -682,36 +655,7 @@
         </div>
     </div>
 </div>
-<div class="element-modal modal fade" id="galleryModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row row-no-pd">
-                    <div class="col-lg-12 col-no-pd">
-                        <div class="modal-body modal-body-no-pd">
-                            <div class="img-wrapper">
-                                <img class="lazyload img-responsive img-centered"
-                                     data-src="assets/img/gallery/6.jpg"
-                                     alt="Allez, tout le monde lève les bras ! A droite ! A gauche !">
-                            </div>
-                            <button type="button" class="btn btn-primary btn-close-modal" data-dismiss="modal">
-                                <i class="fa fa-times"></i>
-                                Fermer
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="element-modal modal fade" id="galleryModal7" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="element-modal modal fade" id="experienceModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -728,6 +672,11 @@
                                 <img class="lazyload img-responsive img-centered"
                                      data-src="assets/img/gallery/7.jpg"
                                      alt="Les enfants chantent avec Muriel pendant que Bernard et Emmanuel jouent.">
+                            </div>
+                            <div class="img-wrapper">
+                                <img class="lazyload img-responsive img-centered"
+                                     data-src="assets/img/gallery/6.jpg"
+                                     alt="Le groupe Bernard Vignal anime le concert.">
                             </div>
                             <button type="button" class="btn btn-primary btn-close-modal" data-dismiss="modal">
                                 <i class="fa fa-times"></i>
