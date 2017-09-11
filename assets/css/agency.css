@@ -69,8 +69,11 @@ h6 {
     background: rgba(12, 12, 12, 0.5);
 }
 
+.overlay-x-light {
+    background: rgba(255, 255, 255, 0.1);
+}
 .overlay-light {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.25);
 }
 
 .btn-primary {
@@ -566,7 +569,7 @@ section h3.section-subheading {
     color: rgba(255, 122, 0, 1);
 }
 .team-member-innerLeft .fa-commenting-o {
-    color: rgba(255, 179, 25, 1);
+    color: rgb(255, 242, 28);
 }
 .team-member-innerRight .fa-commenting-o {
     color: rgba(39, 144, 52, 1);
