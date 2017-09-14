@@ -564,8 +564,7 @@ section h3.section-subheading {
     cursor: pointer;
 }
 
-.team-member-outerLeft .fa-circle {
-    font-size: 0.75em;
+.team-member-outerLeft .fa-commenting-o {
     color: rgba(255, 122, 0, 1);
 }
 .team-member-innerLeft .fa-commenting-o {
@@ -1167,13 +1166,23 @@ section#school p {
     padding-top: 40px;
 }
 
+section#school .xp-link {
+    padding: 2em 0;
+}
 section#school a .fa,
 section#school .xp-link a,
+section#school .xp-link div,
 section#school .xp-link a .fa {
     color: #333333;
     font-size: 20px;
 }
 
+.coming-soon {
+    border: 5px solid #fff;
+}
+.coming-soon:first-child {
+    border-bottom: 0;
+}
 section#school .xp-link:hover {
     background: rgba(255, 255, 255, 0.8);
 }
@@ -1209,7 +1218,6 @@ section#school ul li {
 }
 
 section#school ul li a {
-    line-height: 4em;
     padding: 3em 0;
 }
 
@@ -1240,7 +1248,9 @@ section#school a .fa {
     }
 
     section#school .xp-link a > i,
-    section#school .xp-link a > span {
+    section#school .xp-link a > span,
+    section#school .xp-link div > i,
+    section#school .xp-link div > span {
         display: block;
     }
 
