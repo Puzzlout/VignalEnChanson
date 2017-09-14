@@ -1180,9 +1180,9 @@ section#school .xp-link a .fa {
 .coming-soon {
     border: 5px solid #fff;
 }
-.coming-soon:first-child {
+/*.coming-soon:first-child {
     border-bottom: 0;
-}
+}*/
 section#school .xp-link:hover {
     background: rgba(255, 255, 255, 0.8);
 }
